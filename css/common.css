@@ -1,0 +1,237 @@
+/*--------------------------------------------------------
+ *	Title:			common.css
+ *	Author:			Roberto Gomez
+ *	Date:			4/14/13
+ *	Description:	CSS external stylesheet for work page
+ *					work.html
+ *
+ *	Revision:		A
+ *--------------------------------------------------------*/
+
+/*
+ * Color reference chart
+ *
+ * element					   comment			color
+ * main background			   mbg				#a3afb5
+ * header/footer background    hfbg				#202020
+ * header/footer text		   hft				#FFFFFF
+ */
+
+html,body {height:100%;}
+
+body {background-color:/*mbg*/#A3AFB5;}
+
+.site-container {				/* Hide overflowing footer padding and stop	 */
+    overflow:hidden;			/* the vertical scrollbars. min-height crops */
+    min-height:100%;			/* footer at bottom of window. min-width     */
+    min-width:994px;			/* ensures all content is viewable.          */
+}
+
+#header {
+	height:80px;
+	background-color:/*hfbg*/#202020;
+}
+
+#wrap {							/* wrap div allows content to be centered    */
+	width:994px;				/* when window changes using auto for left   */
+	height:630px;				/* and right margins. It's position is       */
+	margin:0 auto;				/* relative so that all content may be       */
+	position:relative;			/* placed relative to it using absolute prop */
+}
+
+h1 {
+	position:absolute;
+	top:-50px;
+	left:65px;
+	font-size:45px;
+}
+
+h1 a, #email a {				/* Link selectors for title and email grouped together */
+	color:/*hft*/#FFFFFF;
+	text-decoration:none;
+}
+
+h1 a:hover, #email a:hover {		/* Selector for when mouse is over link */
+	color:#B0B0B0;					/* Lighter color emulates highlighting  */
+}
+
+h1 a:active, #email a:active {		/* Selector for when link is selected */
+	color:#FFFFFF;					/* Restores color of unselected link  */
+}
+
+nav {
+	position:absolute;
+	top:-32px;
+	left:567px;
+}
+
+.unselectable {
+	-webkit-touch-callout:none;		/* Prevent text selection in iOS, */
+	-webkit-user-select:none;		/* Chrome & Safari,				  */
+	-khtml-user-select:none;		/* Konqueror,					  */
+	-moz-user-select:none;			/* Firefox,						  */
+	-ms-user-select:none;			/* and IE 10+					  */
+	user-select:none;
+}
+
+.tabs li {
+	float:left;				/* Makes a horizontal row */
+	position:relative;		/* For abs. positioning of psueudo elements */
+}
+
+.tabs a {
+	float:left;				/* Make them block level and only as wide as they need */
+	padding:8px 30px;
+	text-decoration:none;
+	color:black;			/* Default colors */ 
+	background:gray;
+	-webkit-border-top-left-radius:12px;
+	-webkit-border-top-right-radius:12px;
+	-moz-border-radius-topleft:12px;
+	-moz-border-radius-topright:12px;
+	border-top-left-radius:12px;
+	border-top-right-radius:12px;
+}
+
+.tabs .active {								/* Highest, active tab is on top */
+	z-index:3;
+}
+
+.tabs .active a { 							/* Colors when tab is active */
+	background:/*mbg*/#A3AFB5; 
+	color:black; 
+}
+
+.tabs li:before, .tabs li:after,			/* All pseudo elements are		 */
+.tabs li a:before, .tabs li a:after {		/* abs. positioned and on bottom */
+	position:absolute;
+	bottom:0;
+}
+   
+.tabs li:last-child:after,					/* Only the first, last, and active */
+.tabs li:last-child a:after,				/* tabs need pseudo elements at all */
+.tabs li:first-child:before,
+.tabs li:first-child a:before,
+.tabs .active:after,   .tabs .active:before,
+.tabs .active a:after, .tabs .active a:before {
+	content:"";
+}
+
+.tabs .active:before, .tabs .active:after {
+	background:/*mbg*/#A3AFB5;
+	z-index:1;								/* Squares below circles */
+}
+
+.tabs li:before, .tabs li:after {			/* Squares */
+	background:gray;
+	width:10px;
+	height:10px;
+}
+
+.tabs li:before {
+	left:-10px;
+}
+
+.tabs li:after {
+	right:-10px;
+}
+
+.tabs li a:after, .tabs li a:before {		/* Circles */
+	width:20px;
+	height:20px;
+	-webkit-border-radius:10px;				/* Circles are circular */
+	-moz-border-radius:10px;
+	border-radius:10px;
+	background:/*hfbg*/#202020;
+	z-index:2;								/* Circles over squares */
+}
+
+.tabs .active a:after, .tabs .active a:before {
+	background:gray;
+}
+
+.tabs li:first-child.active a:before,		/* First and last tabs have		 */
+.tabs li:last-child.active a:after {		/* different outside color needs */
+	background:/*hfbg*/#202020;
+}
+
+.tabs li a:before {
+	left:-20px;
+}
+.tabs li a:after {
+	right:-20px;
+}
+
+
+hr {							/* Styling for line separator		  */			
+	border:0;					/* Can be placed in reset.css instead */
+	height:1px;
+	background-color:#000000;
+}
+
+
+#email {
+	position:absolute;
+	top:650px;
+	left:100px;
+}
+
+#linkedin {
+	position:absolute;
+	top:646px;
+	left:650px;
+}
+
+#footer {								/* Add long padding but essentially cancel     */
+	background-color:/*hfbg*/#202020;	/* it out with negative margin, thereby ending */
+	height:57px;						/* footer div space at end of browser window.  */
+	padding-bottom:32000px;
+    margin-bottom:-32000px;
+}
+
+
+::selection {							/* Text selection color */
+	background:#ab988b;
+}
+
+::-moz-selection {
+	background:#ab988b;
+}
+
+/*
+ * Notes
+ *
+ * make tabs hover color change or use new code for tabs
+ * for ie compatibility, make alternate/simpler parts of website
+ * ie instead of tab menu, just put word menu
+ */
+
+/*
+ * Incompatibilities
+ *
+ * Tab menu may not be fully supported in older versions of IE.
+ * User selection prevention uses non-standard browser properties.
+ * For older IE versions, may need to use unselectable attribute.
+ */
+
+/*
+ * WARNING
+ *
+ * Don't use comments within comments because they aren't interpreted
+ * correctly. The closing bracket of the inner comment will match with the
+ * beginning bracket of the outer comment, thus allowing characters afterward
+ * to be read.
+ * When editing colors and using color picker, turn off compton as the
+ * transparency it produces alters the true colors.
+ */
+
+/*
+ * Acknowledgements
+ *
+ * The extended footer from
+ * Centering of webpage from
+ * Reset styles from
+ * Many stuff including transparent title of the featured piece from www.w3schools.com
+ * tab menu from css-tricks
+ * color themeing from color scheme designer and kuler
+ */
