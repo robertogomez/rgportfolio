@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<!-- Title:			index.html							-->
-<!-- Author:		Roberto Gomez						-->
-<!-- Date:			4//13								-->
-<!-- Description:	HTML file for homepage using		-->
-<!--				stylesheet style.css				-->
-<!--													-->
-<!-- Revision:		G									-->
-<!--				Linked to work page					-->
-<!--				Moved common stylesheet elements	-->
-<!--				to common.css						-->
+<!-- Title:			index.html										-->
+<!-- Author:		Roberto Gomez									-->
+<!-- Date:			4//13											-->
+<!-- Description:	HTML file for homepage using					-->
+<!--				stylesheet style.css							-->
+<!--																-->
+<!-- Revision:		G												-->
+<!--				Linked to work page								-->
+<!--				Fixed link areas of tabs						-->
+<!--				Renamed class which denotes current page		-->
+<!--				to selected in order to avoid confusion with	-->
+<!--				psuedo-class active (used in link selection)	-->
+<!--				Moved common stylesheet elements				-->
+<!--				to common.css									-->
+<!--				Renamed style.css to index.css					-->
 <html>
 <head>
 	<title>Roberto Gomez</title>
 	<link href="css/reset.css" rel="stylesheet" type="text/css"/>
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
-<body>
+<body id="home">
 	<div class="site-container">
 		<div id="header"></div>
 		<div id="wrap">
@@ -25,20 +30,21 @@
 			</h1>
 			<nav class="unselectable">
 				<ul class="tabs">
-					<li class="active">
+					<!-- selected must come first -->
+					<li class="selected" class="home">
 						<a href="file:///home/beto/Work/Portfolio/
 						Online%20Portfolio/index.html"><h4>Home</h4></a>
 					</li>
-					<li>
+					<li class="work">
 						<a href="file:///home/beto/Work/Portfolio/
 						Online%20Portfolio/work.html"><h4>Work</h4></a>
 					</li>
-					<!--<li>
+					<!--<li class="projects">
 						<a href="file:///home/beto/Work/Portfolio/
 						Online%20Portfolio/projects.html"><h4>Projects</h4>
 						</a>
 					</li>-->
-					<li>
+					<li class="about">
 						<a href="file:///home/beto/Work/Portfolio/
 						Online%20Portfolio/about.html"><h4>About</h4>
 						</a>

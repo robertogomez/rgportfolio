@@ -1,15 +1,18 @@
 /*--------------------------------------------------------
- *	Title:			styles.css
+ *	Title:			style.css
  *	Author:			Roberto Gomez
- *	Date:			4/14/13
+ *	Date:			4//13
  *	Description:	CSS external stylesheet for homepage
  *					index.html
  *
- *	Revision:		F
- *					Redesigned layout
- *					Reduced size of header
- *					Removed subtitle
- *					Added actual content wording
+ *	Revision:		G
+ *					Fixed link areas of tabs
+ *					Renamed class which denotes current page
+ *					to selected in order to avoid confusion with
+ *					psuedo-class active (used in link selection)
+ *					Moved common stylesheet elements
+ *					to common.css
+ *					Renamed style.css to index
  *--------------------------------------------------------*/
 
 /*
@@ -78,6 +81,11 @@ nav {
 	user-select:none;
 }
 
+#home nav .home > a, #home nav .selected > a {
+	pointer-events: none;
+    cursor: default;
+}
+
 .tabs li {
 	float:left;				/* Makes a horizontal row */
 	position:relative;		/* For abs. positioning of psueudo elements */
@@ -97,11 +105,11 @@ nav {
 	border-top-right-radius:12px;
 }
 
-.tabs .active {								/* Highest, active tab is on top */
+.tabs .selected {								/* Highest, active tab is on top */
 	z-index:3;
 }
 
-.tabs .active a { 							/* Colors when tab is active */
+.tabs .selected a { 							/* Colors when tab is active */
 	background:/*mbg*/#A3AFB5; 
 	color:black; 
 }
@@ -116,12 +124,12 @@ nav {
 .tabs li:last-child a:after,				/* tabs need pseudo elements at all */
 .tabs li:first-child:before,
 .tabs li:first-child a:before,
-.tabs .active:after,   .tabs .active:before,
-.tabs .active a:after, .tabs .active a:before {
+.tabs .selected:after,   .tabs .selected:before,
+.tabs .selected a:after, .tabs .selected a:before {
 	content:"";
 }
 
-.tabs .active:before, .tabs .active:after {
+.tabs .selected:before, .tabs .selected:after {
 	background:/*mbg*/#A3AFB5;
 	z-index:1;								/* Squares below circles */
 }
@@ -150,12 +158,12 @@ nav {
 	z-index:2;								/* Circles over squares */
 }
 
-.tabs .active a:after, .tabs .active a:before {
+.tabs .selected a:after, .tabs .selected a:before {
 	background:gray;
 }
 
-.tabs li:first-child.active a:before,		/* First and last tabs have		 */
-.tabs li:last-child.active a:after {		/* different outside color needs */
+.tabs li:first-child.selected a:before,		/* First and last tabs have		 */
+.tabs li:last-child.selected a:after {		/* different outside color needs */
 	background:/*hfbg*/#202020;
 }
 
@@ -264,7 +272,6 @@ hr {							/* Styling for line separator		  */
     margin-bottom:-32000px;
 }
 
-
 ::selection {							/* Text selection color */
 	background:#ab988b;
 }
@@ -276,6 +283,8 @@ hr {							/* Styling for line separator		  */
 /*
  * Notes
  *
+ * may have to use alternate method for rounding out bottom of tabs
+ * like use border-radius on adjacent background tabs
  * make tabs hover color change or use new code for tabs
  * for ie compatibility, make alternate/simpler parts of website
  * ie instead of tab menu, just put word menu
