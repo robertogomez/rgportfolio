@@ -1,0 +1,105 @@
+/*-----------------------------------------------------------------
+ *	Title:			index.css
+ *	Author:			Roberto Gomez
+ *	Date:			4/16/13
+ *	Description:	CSS external stylesheet for homepage
+ *					index.html
+ *
+ *	Revision:		G
+ *					Fixed link areas of tabs.
+ *					Renamed class which denotes current page
+ *					to selected in order to avoid confusion with
+ *					psuedo-class active (used in link selection).
+ *					Moved common stylesheet elements to common.css.
+ *					Renamed style.css to index.css.
+ *-----------------------------------------------------------------*/
+
+#home nav .home > a, #home nav .selected > a {
+	pointer-events: none;
+    cursor: default;
+}
+
+#intro-container {
+	position:absolute;
+	top:50px;
+	left:60px;
+	width:380px;
+	height:100px;
+	font-size:20px;
+}
+
+#news-container {
+	position:absolute;
+	top:50px;
+	left:510px;
+	width:430px;
+	height:180px;
+}
+
+#news-container h3 {
+	font-weight:lighter;
+}
+
+#news-container p {
+	font-size:17px;
+}
+
+#featured-container {
+	position:absolute;
+	top:330px;
+	left:510px;
+	width:430px;
+	height:180px;
+}
+
+#featured-container h2 {
+	text-align:center;
+}
+
+#featured-container a {				/* May be able to move to		   */
+	color:#145376;					/* common.css for all link styling */
+}									/* within regular text			   */
+
+#featured-container a:hover {
+	color:#1c74a5;
+}
+
+#featured-container a:active {
+	color:#145376;
+}
+
+#featured-container p {
+	font-size:18px;
+}
+
+#featured-image {
+	position:absolute;
+	top:200px;
+	left:-37px;
+	z-index:1;
+}
+
+#circle {
+	position:absolute;
+	top:200px;
+	left:40px;
+	width:400px;
+	height:400px;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	background-color:#4A525A;
+	z-index:0;
+}
+
+/*
+ * Notes
+ */
+
+/*
+ * Incompatibilities
+ */
+
+/*
+ * Acknowledgements
+ */

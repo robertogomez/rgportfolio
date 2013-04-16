@@ -1,18 +1,13 @@
-/*--------------------------------------------------------
+/*-----------------------------------------------------------------
  *	Title:			common.css
  *	Author:			Roberto Gomez
- *	Date:			4/14/13
+ *	Date:			4/16/13
  *	Description:	CSS external stylesheet for all pages
  *					which share common elements
  *
  *	Revision:		A
- *					Fixed link areas of tabs
- *					Renamed class which denotes current page
- *					to selected in order to avoid confusion with
- *					psuedo-class active (used in link selection)
- *					Moved common stylesheet elements
- *					to common.css
- *--------------------------------------------------------*/
+ *					Moved common stylesheet elements to common.css.
+ *-----------------------------------------------------------------*/
 
 /*
  * Color reference chart
@@ -72,10 +67,10 @@ nav {
 }
 
 .unselectable {
-	-webkit-touch-callout:none;		/* Prevent text selection in iOS, */
-	-webkit-user-select:none;		/* Chrome & Safari,				  */
-	-khtml-user-select:none;		/* Konqueror,					  */
-	-moz-user-select:none;			/* Firefox,						  */
+	-webkit-touch-callout:none;		/* Prevent text selection in iOS  */
+	-webkit-user-select:none;		/* Chrome & Safari				  */
+	-khtml-user-select:none;		/* Konqueror					  */
+	-moz-user-select:none;			/* Firefox						  */
 	-ms-user-select:none;			/* and IE 10+					  */
 	user-select:none;
 }
@@ -168,14 +163,6 @@ nav {
 	right:-20px;
 }
 
-
-hr {							/* Styling for line separator		  */			
-	border:0;					/* Can be placed in reset.css instead */
-	height:1px;
-	background-color:#000000;
-}
-
-
 #email {
 	position:absolute;
 	top:650px;
@@ -195,7 +182,6 @@ hr {							/* Styling for line separator		  */
     margin-bottom:-32000px;
 }
 
-
 ::selection {							/* Text selection color */
 	background:#ab988b;
 }
@@ -207,9 +193,13 @@ hr {							/* Styling for line separator		  */
 /*
  * Notes
  *
- * make tabs hover color change or use new code for tabs
- * for ie compatibility, make alternate/simpler parts of website
- * ie instead of tab menu, just put word menu
+ * Color reference chart needs update.
+ * For ie compatibility, make alternate/simpler parts of website
+ * ie instead of tab menu, just put word menu.
+ * Make tabs hover color change or use new code for tabs.
+ * May have to use alternate method for rounding out bottom of tabs
+ * like use border-radius on adjacent background tabs but may not
+ * work because of the psuedo elements involved, may show up on hover.
  */
 
 /*
@@ -218,26 +208,4 @@ hr {							/* Styling for line separator		  */
  * Tab menu may not be fully supported in older versions of IE.
  * User selection prevention uses non-standard browser properties.
  * For older IE versions, may need to use unselectable attribute.
- */
-
-/*
- * WARNING
- *
- * Don't use comments within comments because they aren't interpreted
- * correctly. The closing bracket of the inner comment will match with the
- * beginning bracket of the outer comment, thus allowing characters afterward
- * to be read.
- * When editing colors and using color picker, turn off compton as the
- * transparency it produces alters the true colors.
- */
-
-/*
- * Acknowledgements
- *
- * The extended footer from
- * Centering of webpage from
- * Reset styles from
- * Many stuff including transparent title of the featured piece from www.w3schools.com
- * tab menu from css-tricks
- * color themeing from color scheme designer and kuler
  */
