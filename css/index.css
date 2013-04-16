@@ -4,19 +4,15 @@
  *	Date:			4/16/13
  *	Description:	CSS external stylesheet for homepage
  *					index.html
- *
- *	Revision:		G
- *					Fixed link areas of tabs.
- *					Renamed class which denotes current page
- *					to selected in order to avoid confusion with
- *					psuedo-class active (used in link selection).
- *					Moved common stylesheet elements to common.css.
- *					Renamed style.css to index.css.
  *-----------------------------------------------------------------*/
 
 #home nav .home > a, #home nav .selected > a {
 	pointer-events: none;
     cursor: default;
+}
+
+#wrap {
+	height:630px;
 }
 
 #intro-container {
@@ -90,6 +86,14 @@
 	border-radius:50%;
 	background-color:#4A525A;
 	z-index:0;
+}
+
+#email {
+	top:650px;
+}
+
+#linkedin {
+	top:646px;
 }
 
 /*

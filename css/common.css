@@ -4,9 +4,6 @@
  *	Date:			4/16/13
  *	Description:	CSS external stylesheet for all pages
  *					which share common elements
- *
- *	Revision:		A
- *					Moved common stylesheet elements to common.css.
  *-----------------------------------------------------------------*/
 
 /*
@@ -34,11 +31,10 @@ body {background-color:/*mbg*/#A3AFB5;}
 }
 
 #wrap {							/* wrap div allows content to be centered    */
-	width:994px;				/* when window changes using auto for left   */
-	height:630px;				/* and right margins. It's position is       */
-	margin:0 auto;				/* relative so that all content may be       */
-	position:relative;			/* placed relative to it using absolute prop */
-}
+	width:994px;				/* when window changes using auto for left   */				
+	margin:0 auto;				/* and right margins. It's position is       */
+	position:relative;			/* relative so that all content may be       */
+}								/* placed relative to it using absolute prop */
 
 h1 {
 	position:absolute;
@@ -165,13 +161,11 @@ nav {
 
 #email {
 	position:absolute;
-	top:650px;
 	left:100px;
 }
 
 #linkedin {
 	position:absolute;
-	top:646px;
 	left:650px;
 }
 

@@ -11,6 +11,10 @@
     cursor: default;
 }
 
+#wrap {
+	height:1180px;
+}
+
 #robot-container {
 	position:absolute;
 	top:40px;
@@ -19,9 +23,22 @@
 	height:580px;
 }
 
+#email {
+	top:1200px;
+}
+
+#linkedin {
+	top:1196px;
+}
+
 /*
  * Notes
  *
+ * Maybe increase height of footer to allow scrolling a bit below it
+ * so it doesn't look so short at bottom of page.
+ * Properties that are not common and need to be in each css:
+ * heights of wrap div, tops of email and linkedin
+ * Need height property for wrap div since it is specific to each page
  * May want think borders around images
  * May want to use transparent titles for comments directly 
  * on images like in older home page versions.
