@@ -4,13 +4,6 @@
  *	Date:			4/16/13
  *	Description:	CSS external stylesheet for work page
  *					work.html
- *
- *	Revision:		A
- *					Fixed link areas of tabs.
- *					Renamed class which denotes current page
- *					to selected in order to avoid confusion with
- *					psuedo-class active (used in link selection).
- *					Moved common stylesheet elements to common.css.
  *-----------------------------------------------------------------*/
 
 #work nav .work > a, #work nav .selected > a {
@@ -18,9 +11,18 @@
     cursor: default;
 }
 
+#robot-container {
+	position:absolute;
+	top:40px;
+	left:65px;
+	width:860px;
+	height:580px;
+}
+
 /*
  * Notes
  *
+ * May want think borders around images
  * May want to use transparent titles for comments directly 
  * on images like in older home page versions.
  */
