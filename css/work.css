@@ -30,6 +30,7 @@ p {
 
 img {
 	float:right;
+	border:1px solid #4A525A;
 }
 
 .images-next-to-text {
@@ -41,12 +42,12 @@ img {
 }
 
 #robot-mount {
-	margin-top:30px;
+	/*margin-top:20px;*/
 }
 
 #robot-poster {
 	margin-right:50px;
-	margin-top:30px;
+	/*margin-top:20px;*/
 }
 
 #qa-container {
@@ -68,7 +69,10 @@ img {
 /*
  * Notes
  *
- * For some reason robot-poster doesn't respond to margin-top in a class
+ * maybe reduce unused space between both containers
+ * add captions
+ * Static positioning of small robot images may not be best because
+ * small changes in margins and borders change position
  * Mount image needs to be resized
  * Need method of viewing images full size without leaving page no new tabs
  * Consider making discrete paragraphs in descriptions, with or w/o
@@ -76,8 +80,6 @@ img {
  * Make headers of containers larger
  * Maybe increase height of footer to allow scrolling a bit below it
  * so it doesn't look so short at bottom of page.
- * May want thin borders around images
- * May want to use transparent titles for comments directly 
  * on images like in older home page versions.
  */
 
