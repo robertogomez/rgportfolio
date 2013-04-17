@@ -28,13 +28,25 @@ p {
 	font-size:20px;
 }
 
-#robot-main-image, #qa-image {		/* maybe better if selected with class */
+img {
 	float:right;
+}
+
+.images-next-to-text {
 	margin-left:30px;
 }
 
-#robot-poster, #robot-mount {
-	float:right;
+#robot-main-image {					/* Bottom margin keeps text from   */
+	margin-bottom:10px;				/* wrapping around bottom of image */
+}
+
+#robot-mount {
+	margin-top:30px;
+}
+
+#robot-poster {
+	margin-right:50px;
+	margin-top:30px;
 }
 
 #qa-container {
@@ -56,6 +68,7 @@ p {
 /*
  * Notes
  *
+ * For some reason robot-poster doesn't respond to margin-top in a class
  * Mount image needs to be resized
  * Need method of viewing images full size without leaving page no new tabs
  * Consider making discrete paragraphs in descriptions, with or w/o
