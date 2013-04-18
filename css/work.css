@@ -28,7 +28,7 @@ img {
 }
 
 p {
-	font-size:20px;
+	font-size:18px;
 }
 
 #robot-text {
@@ -69,10 +69,15 @@ p {
 	margin-top:20px;
 }
 
-#qa-container img {
+#qa-container a {
 	margin-left:30px;
 	float:right;
 }
+
+/*#qa-container img {
+	margin-left:30px;
+	float:right;
+}*/
 
 #email {
 	top:1200px;
@@ -92,15 +97,14 @@ p {
 /*
  * Notes
  *
- * maybe reduce unused space between both containers
- * add captions
- * Need method of viewing images full size without leaving page no new tabs
+ * How to remove yellow border around image after viewing it with colorbox
+ * add captions below robot text like in magazine from clockwise etc
+ * or make use of captions in lightbox
  * Consider making discrete paragraphs in descriptions, with or w/o
  * line spacing in between
- * Make headers of containers larger
  * Maybe increase height of footer to allow scrolling a bit below it
  * so it doesn't look so short at bottom of page.
- * on images like in older home page versions.
+ * maybe reduce unused space between both containers
  */
 
 /*

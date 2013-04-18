@@ -1,6 +1,14 @@
 to do
 
+after website has been launched and hosted verify jquery functionality
+namely check if http: should prepend the //ajax.google... or not
+because it seems for local html files, you need the http but for
+online you don't?
+ANSWER: protocol-relative URL see
+http://paulirish.com/2010/the-protocol-relative-url/
+so when working on locally must include http, otherwise remove it
 add github profile or rgportfolio repo link to portfolio
+also make stackoverflow account
 add website url of portfolio to github
 look into complying with html5 standards ie verification
 add projects page

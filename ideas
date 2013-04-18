@@ -1,5 +1,8 @@
 ideas
 
+hosting
+look for email hosting as well, can get address like hello@robertogomez.com
+
 style
 changing font messes with sizing/alignment of content since different fonts
 have different widths, may need some way to position content depending on font
@@ -52,6 +55,7 @@ software release life cycle
 
 structure
 can create a changelog with the commits as reference
+add official changelog in readme file
 
 misc
 consider hosting source code on github since ppl can see the code

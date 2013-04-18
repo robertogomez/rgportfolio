@@ -10,6 +10,21 @@
 	<link href="css/reset.css" rel="stylesheet" type="text/css"/>
 	<link href="css/common.css" rel="stylesheet" type="text/css"/>
 	<link href="css/work.css" rel="stylesheet" type="text/css"/>
+	<!-- Load jQuery from Google CDN -->
+	<script src="http://ajax.googleapis.com/ajax/libs/
+		jquery/1.9.1/jquery.min.js"></script>
+	<!-- Load jQuery from local copy if Google CDN fails -->
+	<script>window.jQuery || document.write('<script 
+		src="js/jquery.min.js"><\/script>')</script>
+	<link rel="stylesheet" href="css/jquery.fancybox.
+		css?v=2.1.4" type="text/css" media="screen"/>
+	<script type="text/javascript" src="js/jquery.
+		fancybox.pack.js?v=2.1.4"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+</script>
 </head>
 <body id="work">
 	<div class="site-container">
@@ -82,9 +97,10 @@
 				<h2>Quality Assurance Internship</h2>
 				<hr>
 				<p>
-					<img
-					src="images/gomez-yalda-poster-small.jpg" 
-					width="400" height="300" alt="Internship Poster"/>
+					<a class="fancybox" href="images/gomez-yalda-poster.jpg">
+						<img src="images/gomez-yalda-poster-small.jpg" 
+						width="400" height="300" alt="Internship Poster"/>
+					</a>
 					Lorem ipsum dolor sit amet, consectetur adipisicing 
 					elit, sed do eiusmod tempor incididunt ut labore et 
 					dolore magna aliqua. Ut enim ad minim veniam, quis 
