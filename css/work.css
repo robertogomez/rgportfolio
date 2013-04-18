@@ -74,11 +74,6 @@ p {
 	float:right;
 }
 
-/*#qa-container img {
-	margin-left:30px;
-	float:right;
-}*/
-
 #email {
 	top:1200px;
 }
@@ -91,15 +86,15 @@ p {
  * Update
  *
  * Before site launch remember to update these:
- * Medium mount image to size 185x139
+ * Mount image need 1024x768 and new 800x600
  */
 
 /*
  * Notes
  *
- * How to remove yellow border around image after viewing it with colorbox
  * add captions below robot text like in magazine from clockwise etc
  * or make use of captions in lightbox
+ * Make border of images highlight when mouse over
  * Consider making discrete paragraphs in descriptions, with or w/o
  * line spacing in between
  * Maybe increase height of footer to allow scrolling a bit below it

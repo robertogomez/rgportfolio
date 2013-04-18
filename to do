@@ -1,9 +1,12 @@
 to do
 
-after website has been launched and hosted verify jquery functionality
-namely check if http: should prepend the //ajax.google... or not
-because it seems for local html files, you need the http but for
-online you don't?
+before release website update:
+	links, remove file:/// part
+	dates on comments
+	mount image sizes optimized
+	remove http: from google cdn for jquery, see below
+	
+question regarding no http: in google cdn link:
 ANSWER: protocol-relative URL see
 http://paulirish.com/2010/the-protocol-relative-url/
 so when working on locally must include http, otherwise remove it

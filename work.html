@@ -22,9 +22,14 @@
 		fancybox.pack.js?v=2.1.4"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$(".fancybox").fancybox();
+			$(".fancybox").fancybox({
+				padding : 0,
+				nextEffect: 'none',
+				prevEffect: 'none',
+				minWidth: 800
+			});
 		});
-</script>
+	</script>
 </head>
 <body id="work">
 	<div class="site-container">
@@ -83,22 +88,28 @@
 				cupidatat non proident, sunt in culpa qui officia 
 				deserunt mollit anim id est laborum.
 			</p>
-			<img id="robot-main-image"
-				src="images/Robot final 400x300.jpg" 
+			<a id="robot-main-image" class="fancybox" rel="robot"
+				href="images/Robot final 1024x768.jpg">
+				<img src="images/Robot final 400x300.jpg" 
 				width="400" height="300" alt="Mobile Robot"/>
-			<img id="robot-poster" 
-				src="images/Barriga-Gomez-Poster-Final 185x139.jpg" 
+			</a>
+			<a id="robot-poster" class="fancybox" rel="robot"
+				href="images/Barriga-Gomez-Poster-Final 1024x768.jpg">
+				<img src="images/Barriga-Gomez-Poster-Final 185x139.jpg" 
 				width="185" height="139" alt="Semi-autonomous Robots 
 				and Efficiency Through Internet Access"/>
-			<img id="robot-mount" src="images/Mount medium.jpg" 
-				width="185" height="139" alt="Plexiglass mount for 
-				robot electronics"/>
+			</a>
+			<a id="robot-mount" class="fancybox" rel="robot"
+				href="images/Mount 800x600.jpg">	<img src="images/
+				Mount 185x139.jpg" width="185" height="139" 
+				alt="Plexiglass mount for robot electronics"/>
+			</a>
 			<div id="qa-container">
 				<h2>Quality Assurance Internship</h2>
 				<hr>
 				<p>
 					<a class="fancybox" href="images/gomez-yalda-poster.jpg">
-						<img src="images/gomez-yalda-poster-small.jpg" 
+						<img src="images/gomez-yalda-poster 400x300.jpg" 
 						width="400" height="300" alt="Internship Poster"/>
 					</a>
 					Lorem ipsum dolor sit amet, consectetur adipisicing 
