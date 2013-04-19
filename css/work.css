@@ -23,20 +23,25 @@
 	height:580px;
 }
 
+#robot-textbox {
+	position:absolute;
+	left:65px;
+	top:95px;
+	width:410px;
+	height:500px;
+}
+
+p {
+	font-size:14px;				/* Minimum text size s/b 15/16 */
+	text-indent:2em;			
+}
+
 img {
 	border:1px solid #4A525A;
 }
 
-p {
-	font-size:18px;
-}
-
-#robot-text {
-	position:absolute;
-	left:65px;
-	top:95px;
-	width:360px;
-	height:500px;
+img:hover {
+	border:1px solid #1c74a5;
 }
 
 #robot-main-image {
@@ -70,7 +75,7 @@ p {
 }
 
 #qa-container a {
-	margin-left:30px;
+	margin-left:50px;
 	float:right;
 }
 
@@ -92,9 +97,17 @@ p {
 /*
  * Notes
  *
+ * Look into increasing size between text lines like most websites
+ * consider posting robot report on site, else may available on request
+ * ask question of fancybox minwidth on stackoverflow, maybe first 
+ * ask creator
+ * The hover effect for images is also affecting them when they're 
+ * viewed in fancybox, maybe apply hover only to link or image 
+ * individually, else disable hover effect
+ * Add specifics, quantify, the word content of the works so its more 
+ * specific, less general
  * add captions below robot text like in magazine from clockwise etc
  * or make use of captions in lightbox
- * Make border of images highlight when mouse over
  * Consider making discrete paragraphs in descriptions, with or w/o
  * line spacing in between
  * Maybe increase height of footer to allow scrolling a bit below it

@@ -26,7 +26,7 @@
 				padding : 0,
 				nextEffect: 'none',
 				prevEffect: 'none',
-				minWidth: 800
+				minWidth: 900
 			});
 		});
 	</script>
@@ -64,34 +64,68 @@
 				</ul>
 			</nav>
 			<div id="robot-container">
-				<h2>Mobile Robotics Research</h2>
+				<h2>Semi-Autonomous Robotics Research</h2>
 				<hr>
 			</div>
-			<p id="robot-text">
-				Lorem ipsum dolor sit amet, consectetur adipisicing 
-				elit, sed do eiusmod tempor incididunt ut labore et 
-				dolore magna aliqua. Ut enim ad minim veniam, quis 
-				nostrud exercitation ullamco laboris nisi ut aliquip 
-				ex ea commodo consequat. Duis aute irure dolor in 
-				reprehenderit in voluptate velit esse cillum dolore 
-				eu fugiat nulla pariatur. Excepteur sint occaecat 
-				cupidatat non proident, sunt in culpa qui officia 
-				deserunt mollit anim id est laborum.
-				Lorem ipsum dolor sit amet, consectetur adipisicing 
-				elit, sed do eiusmod tempor incididunt ut labore et 
-				dolore magna aliqua. Ut enim ad minim veniam, quis 
-				nostrud exercitation ullamco laboris nisi ut aliquip 
-				ex ea commodo consequat.
-				Duis aute irure dolor in 
-				reprehenderit in voluptate velit esse cillum dolore 
-				eu fugiat nulla pariatur. Excepteur sint occaecat 
-				cupidatat non proident, sunt in culpa qui officia 
-				deserunt mollit anim id est laborum.
-			</p>
+			<div id="robot-textbox">
+				<p>
+					In addition to undertanding the fundamentals of any 
+					displine, I have always believed that it is important 
+					to acquire practical, real-life experience outside of 
+					the classroom. To that end I was fortunate enough to 
+					particapte in the <a href="http://alliance.sdccmesa.com/
+					archives/2692"> 2012 NSF/MESA Summer Team Internship 
+					Program</a>. As a research assistant for the SDSU 
+					Department of Electrical and Computer Engineering, I 
+					was able to develop a semi-autonomous robot with object 
+					avoidance capabilities. The purpose of the research was 
+					to develop a way for a robot to safely navigate an area 
+					by deciding if there are obstructions in its path and 
+					making appropriate avoidance manuevers. Basing it on the 
+					popular <a href="http://www.irobot.com/us/robots/
+					Educators/Create.aspx">iRobot Create®</a> platform, I 
+					used two ultrasonic sensors to provide object detection so 
+					that the robot could detect objects in front of it. To 
+					interface between the iRobot® platform and the sensors, 
+					I programmed an <a href="http://arduino.cc/en/Main/
+					arduinoBoardMega">Arduino Mega</a> microcontroller to 
+					receive the sensor data, interpret it to determine if 
+					there is an obstruction in its path, and send movement 
+					commands to the robot through serial communication.
+				</p>
+				<p>
+					While it was a simple project as far as robotics go, it 
+					involved aspects from many different disciplines, such as 
+					eletrical, computer, and mechanical engineering. Firstly, 
+					I had determine how to conect all the components so that 
+					they would all function as a single system. For example, 
+					I needed to figure out how to draw power from the iRobot® 
+					to distribute to the sensors and microcontroller. 
+					Then I programmed the Arduino microcontroller (which 
+					essentially uses C/C++ language) to analyze the pulse 
+					width output signals from the two sensors, decide if an 
+					avoidance manuever is necessary, and send the corresponding 
+					movement commands to the iRobot® via serial communication. 
+					Lastly, I designed a few parts in SolidWorks in order to 
+					provide mounting surfaces for the components. The parts 
+					were formed from plexiglass using a CNC machine in the 
+					SDSU engineering machine shop.
+				</p>
+				<p>
+					Looking back, this research has given me a great 
+					sense of accomplishment. It has definitely increased 
+					my confidence in my ability to face challenges in embedded 
+					systems. For more information check out the research poster 
+					at the right that my partner and I created (he worked on a
+					website for the Retired Senior Volunteer Patrol). If you 
+					would like to know some of the technical details of the 
+					robot I can send you the report I wrote for the research.
+				</p>
+			</div>
 			<a id="robot-main-image" class="fancybox" rel="robot"
 				href="images/Robot final 1024x768.jpg">
 				<img src="images/Robot final 400x300.jpg" 
-				width="400" height="300" alt="Mobile Robot"/>
+				width="400" height="300" alt="Semi-Autonomous Robot"/>
 			</a>
 			<a id="robot-poster" class="fancybox" rel="robot"
 				href="images/Barriga-Gomez-Poster-Final 1024x768.jpg">
@@ -112,6 +146,8 @@
 						<img src="images/gomez-yalda-poster 400x300.jpg" 
 						width="400" height="300" alt="Internship Poster"/>
 					</a>
+					I also attained this internship through the MESA 
+					Summer Team Internship program.
 					Lorem ipsum dolor sit amet, consectetur adipisicing 
 					elit, sed do eiusmod tempor incididunt ut labore et 
 					dolore magna aliqua. Ut enim ad minim veniam, quis 

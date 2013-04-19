@@ -5,7 +5,17 @@ before release website update:
 	dates on comments
 	mount image sizes optimized
 	remove http: from google cdn for jquery, see below
-	
+	review word content, look at portfolio recommendation sites:
+	http://www.codinghorror.com/blog/2004/10/a-programmers-portfolio.html
+	http://restreaming.me/2012/08/31/a-good-programmers-portfolio/
+	http://www.lessannoyingcrm.com/articles/209/How_to_build_a_great_programmer_portfolio_site
+
+set limit to width of source file text (can use vertical line in scite)
+because it seems that the text just keeps getting longer
+Consider changing referenes to Mobile Robotics Research to something
+more interesting/specif like Semi-autonomous robotics research with
+object avoidance capability. change references everywhere including
+website, resume, linkedin etc
 question regarding no http: in google cdn link:
 ANSWER: protocol-relative URL see
 http://paulirish.com/2010/the-protocol-relative-url/

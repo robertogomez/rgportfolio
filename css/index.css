@@ -107,6 +107,9 @@
 
 /*
  * Notes
+ * Link to robot correctly links to robot container and scrolls to it,
+ * but it cuts off header and can't scroll above it. should be functionally
+ * equivalent to wiki pages with toc and headers
  * Until make slideshow effect for news posts, in meantime can just post
  * only newest item and have a link that shows all news on a different page
  */
