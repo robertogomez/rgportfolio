@@ -52,22 +52,38 @@
 					</li>
 					<!--<li class="projects">
 						<a href="file:///home/beto/Work/Portfolio/
-						Online%20Portfolio/projects.html"><h4>Projects</h4>
-						</a>
+						Online%20Portfolio/projects.html"><h4>Projects</h4></a>
 					</li>-->
 					<li class="about">
 						<a href="file:///home/beto/Work/Portfolio/
-						Online%20Portfolio/about.html"><h4>About</h4>
-						</a>
-					</li>
+						Online%20Portfolio/about.html"><h4>About</h4></a>
 					</li>
 				</ul>
 			</nav>
 			<div id="robot-container">
 				<h2>Semi-Autonomous Robotics Research</h2>
 				<hr>
-			</div>
-			<div id="robot-textbox">
+				<!-- id tags must be on the img's, not the a's for 
+					margins to work. There must not be any whitespace 
+					between the end of the img tags and ending a tags
+					or else ghost/extraneous links will appear 
+				-->
+				<div id="robot-images" class="work-images">
+					<a  class="fancybox" rel="robot" href="images/Robot final 
+						1024x768.jpg"><img id="robot-main-image" 
+						src="images/Robot final 400x300.jpg" width="400" 
+						height="300" alt="Semi-Autonomous Robot"></a>
+					<a  class="fancybox" rel="robot"
+						href="images/Barriga-Gomez-Poster-Final 1024x768.jpg">
+						<img id="robot-poster"src="images/Barriga-Gomez-Poster-
+						Final 185x139.jpg" width="185" height="139" 
+						alt="Semi-Autonomous Robots and Efficiency 
+						Through Internet Access"></a>
+					<a  class="fancybox" rel="robot" href="images/Mount 
+						800x600.jpg"><img id="robot-mount" src="images/Mount 
+						185x139.jpg" width="185" height="139"
+						alt="SolidWorks model for Plexiglass mount"></a>
+				</div>
 				<p>
 					I have always believed that it's important 
 					to acquire practical, real-life experience outside of 
@@ -119,30 +135,14 @@
 					send you a report I wrote for the project.
 				</p>
 			</div>
-			<a id="robot-main-image" class="fancybox" rel="robot"
-				href="images/Robot final 1024x768.jpg">
-				<img src="images/Robot final 400x300.jpg" 
-				width="400" height="300" alt="Semi-Autonomous Robot"/>
-			</a>
-			<a id="robot-poster" class="fancybox" rel="robot"
-				href="images/Barriga-Gomez-Poster-Final 1024x768.jpg">
-				<img src="images/Barriga-Gomez-Poster-Final 185x139.jpg" 
-				width="185" height="139" alt="Semi-autonomous Robots 
-				and Efficiency Through Internet Access"/>
-			</a>
-			<a id="robot-mount" class="fancybox" rel="robot"
-				href="images/Mount 800x600.jpg">	<img src="images/
-				Mount 185x139.jpg" width="185" height="139" 
-				alt="Plexiglass mount for robot electronics"/>
-			</a>
 			<div id="qa-container">
 				<h2>Quality Assurance Internship</h2>
 				<hr>
 				<p>
-					<a class="fancybox" href="images/gomez-yalda-poster.jpg">
-						<img src="images/gomez-yalda-poster 400x300.jpg" 
-						width="400" height="300" alt="Internship Poster"/>
-					</a>
+					<a  class="fancybox" href="images/gomez-yalda-poster.jpg">
+						<img class="work-images"
+						src="images/gomez-yalda-poster 400x300.jpg" 
+						width="400" height="300" alt="Internship Poster"></a>
 					I also attained this internship through the MESA 
 					Summer Team Internship program.
 					Lorem ipsum dolor sit amet, consectetur adipisicing 
@@ -163,12 +163,11 @@
 				<a href="mailto:gomez.roberto.jr@gmail.com">
 				gomez.roberto.jr@gmail.com</a>
 			</h3>
-			<a id="linkedin" class="unselectable" 
+			<a  id="linkedin" class="unselectable" 
 				href="http://www.linkedin.com/in/gomezroberto">
 				<img src="http://www.linkedin.com/img/webpromo/
 				btn_viewmy_160x25.png" width="160" height="25" 
-				border="0" alt="View Roberto Gomez's profile on LinkedIn"/>
-			</a>
+				border="0" alt="View Roberto Gomez's profile on LinkedIn"></a>
 		</div>
 		<div id="footer"></div>
 	</div>

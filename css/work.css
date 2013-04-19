@@ -23,16 +23,31 @@
 	height:580px;
 }
 
-#robot-textbox {
-	position:absolute;
-	left:65px;
-	top:95px;
-	width:410px;
-	height:500px;
+hr {
+	margin-bottom:20px;
+}
+
+#robot-images {
+	width:402px;
+	/*height:465px;*/
+	margin-bottom:20px;
+}
+
+.work-images {
+	float:right;
+	margin-left:30px;
+}
+
+#robot-main-image {
+	margin-bottom:22px;
+}
+
+#robot-poster {
+	margin-right:23px;
 }
 
 p {
-	font-size:14px;				/* Minimum text size s/b 15/16 */
+	font-size:15px;
 	text-indent:2em;			
 }
 
@@ -44,39 +59,12 @@ img:hover {
 	border:1px solid #1c74a5;
 }
 
-#robot-main-image {
-	position:absolute;
-	left:520px;
-	top:95px;
-}
-
-#robot-mount {
-	position:absolute;
-	top:420px;
-	left:735px;
-}
-
-#robot-poster {
-	position:absolute;
-	top:420px;
-	left:520px;
-}
-
 #qa-container {
 	position:absolute;
 	top:720px;
 	left:65px;
 	width:860px;
 	height:400px;
-}
-
-#qa-container p {
-	margin-top:20px;
-}
-
-#qa-container a {
-	margin-left:50px;
-	float:right;
 }
 
 #email {
@@ -97,8 +85,8 @@ img:hover {
 /*
  * Notes
  *
+ * Maybe make margins same as home page just for uniformity
  * Remember to do a spell check on qa text
- * Before try to make all text fit, slim it down, remove extraneous words
  * To make robot text fit, can also decrease margins, decrease robot
  * image sizes, increase height of page, and change size of images 
  * Can try making the robot main picture position in line with the text
@@ -123,8 +111,4 @@ img:hover {
 
 /*
  * Incompatibilities
- */
-
-/*
- * Acknowledgements
  */

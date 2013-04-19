@@ -107,6 +107,7 @@
 
 /*
  * Notes
+ *
  * Link to robot correctly links to robot container and scrolls to it,
  * but it cuts off header and can't scroll above it. should be functionally
  * equivalent to wiki pages with toc and headers
@@ -116,8 +117,4 @@
 
 /*
  * Incompatibilities
- */
-
-/*
- * Acknowledgements
  */
