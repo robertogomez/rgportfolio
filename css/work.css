@@ -97,6 +97,13 @@ img:hover {
 /*
  * Notes
  *
+ * Before try to make all text fit, slim it down, remove extraneous words
+ * To make robot text fit, can also decrease margins, decrease robot
+ * image sizes, increase height of page, and change size of images 
+ * Can try making the robot main picture position in line with the text
+ * so that the text can wrap around underneath it. Can still have small
+ * images absolute positioned, and give the main image a large bottom-
+ * margin so that text wraps below small images.
  * Look into increasing size between text lines like most websites
  * consider posting robot report on site, else may available on request
  * ask question of fancybox minwidth on stackoverflow, maybe first 
@@ -108,8 +115,6 @@ img:hover {
  * specific, less general
  * add captions below robot text like in magazine from clockwise etc
  * or make use of captions in lightbox
- * Consider making discrete paragraphs in descriptions, with or w/o
- * line spacing in between
  * Maybe increase height of footer to allow scrolling a bit below it
  * so it doesn't look so short at bottom of page.
  * maybe reduce unused space between both containers
