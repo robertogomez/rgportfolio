@@ -13,15 +13,13 @@
 }
 
 #wrap {
-	height:1180px;
+	height:1250px;
 }
 
 #robot-container {
-	position:absolute;
-	top:40px;
-	left:65px;
 	width:860px;
-	height:580px;
+	height:675px;
+	padding:40px 65px;
 }
 
 #robot-images {
@@ -44,7 +42,7 @@ img:hover {
 
 .work-images {
 	float:right;
-	margin-left:30px;
+	margin-left:35px;
 }
 
 #robot-main-image {
@@ -62,19 +60,17 @@ p {
 }
 
 #qa-container {
-	position:absolute;
-	top:720px;
-	left:65px;
 	width:860px;
 	height:400px;
+	padding:40px 65px;
 }
 
 #email {
-	top:1200px;
+	top:1270px;
 }
 
 #linkedin {
-	top:1196px;
+	top:1266px;
 }
 
 /*
