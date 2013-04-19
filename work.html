@@ -69,57 +69,54 @@
 			</div>
 			<div id="robot-textbox">
 				<p>
-					In addition to undertanding the fundamentals of any 
-					displine, I have always believed that it is important 
+					I have always believed that it's important 
 					to acquire practical, real-life experience outside of 
 					the classroom. To that end I was fortunate enough to 
-					particapte in the <a href="http://alliance.sdccmesa.com/
+					participate in the <a href="http://alliance.sdccmesa.com/
 					archives/2692"> 2012 NSF/MESA Summer Team Internship 
 					Program</a>. As a research assistant for the SDSU 
 					Department of Electrical and Computer Engineering, I 
-					was able to develop a semi-autonomous robot with object 
-					avoidance capabilities. The purpose of the research was 
-					to develop a way for a robot to safely navigate an area 
-					by deciding if there are obstructions in its path and 
-					making appropriate avoidance manuevers. Basing it on the 
-					popular <a href="http://www.irobot.com/us/robots/
-					Educators/Create.aspx">iRobot Create®</a> platform, I 
-					used two ultrasonic sensors to provide object detection so 
-					that the robot could detect objects in front of it. To 
-					interface between the iRobot® platform and the sensors, 
-					I programmed an <a href="http://arduino.cc/en/Main/
-					arduinoBoardMega">Arduino Mega</a> microcontroller to 
-					receive the sensor data, interpret it to determine if 
-					there is an obstruction in its path, and send movement 
-					commands to the robot through serial communication.
+					developed a semi-autonomous, mobile robot with object 
+					avoidance capabilities. Based on the popular 
+					<a href="http://www.irobot.com/us/robots/
+					Educators/Create.aspx">iRobot Create®</a> platform, it 
+					used two ultrasonic sensors for object detection. For 
+					interfacing between the platform and sensors, I 
+					programmed an <a href="http://arduino.cc/en/Main/
+					arduinoBoardMega">Arduino Mega</a> microcontroller. It
+					was responsible for interpreting the sensor data, 
+					determining if obstructions were in the robot's path, 
+					and issuing movement commands.
 				</p>
 				<p>
 					While it was a simple project as far as robotics go, it 
-					involved aspects from many different disciplines, such as 
-					eletrical, computer, and mechanical engineering. Firstly, 
-					I had determine how to conect all the components so that 
+					involved many disciplines, such as 
+					electrical, computer, and mechanical engineering. First, 
+					I determined how to connect all the components so that 
 					they would all function as a single system. For example, 
-					I needed to figure out how to draw power from the iRobot® 
-					to distribute to the sensors and microcontroller. 
-					Then I programmed the Arduino microcontroller (which 
-					essentially uses C/C++ language) to analyze the pulse 
-					width output signals from the two sensors, decide if an 
-					avoidance manuever is necessary, and send the corresponding 
-					movement commands to the iRobot® via serial communication. 
-					Lastly, I designed a few parts in SolidWorks in order to 
+					I created a simple circuit on a breadboard that delivered 
+					power from the iRobot® to the sensors and microcontroller. 
+					Then I programmed the Arduino (which essentially uses 
+					C/C++ language) to analyze the pulse width output signals 
+					from the two sensors. If an object was detected within 
+					ten inches, the microcontroller would send a sequence of 
+					bytes to the platform through serial communication to 
+					initiate a simple avoidance maneuver that consisted of 
+					stopping, rotating a number of degrees, and continuing
+					forward. Lastly, I designed a few parts in SolidWorks to 
 					provide mounting surfaces for the components. The parts 
-					were formed from plexiglass using a CNC machine in the 
+					were formed from Plexiglas using a CNC machine in the 
 					SDSU engineering machine shop.
 				</p>
 				<p>
 					Looking back, this research has given me a great 
 					sense of accomplishment. It has definitely increased 
-					my confidence in my ability to face challenges in embedded 
-					systems. For more information check out the research poster 
-					at the right that my partner and I created (he worked on a
-					website for the Retired Senior Volunteer Patrol). If you 
-					would like to know some of the technical details of the 
-					robot I can send you the report I wrote for the research.
+					my knowledge and appreciation for robotics and embedded 
+					systems. For more information view the research poster 
+					my partner and I created (he worked on a website for the 
+					Retired Senior Volunteer Patrol). If you would like to 
+					know some of the technical details of the robot I can
+					send you a report I wrote for the project.
 				</p>
 			</div>
 			<a id="robot-main-image" class="fancybox" rel="robot"

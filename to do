@@ -3,6 +3,7 @@ to do
 before release website update:
 	links, remove file:/// part
 	dates on comments
+	spell check using copy paste into libreoffice
 	mount image sizes optimized
 	remove http: from google cdn for jquery, see below
 	review word content, look at portfolio recommendation sites:
