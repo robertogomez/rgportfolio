@@ -6,9 +6,10 @@
  *					work.html
  *-----------------------------------------------------------------*/
 
-#work nav .work > a, #work nav .selected > a {
-	pointer-events: none;
-    cursor: default;
+#work nav .work > a, 				/* Disables the tab link  */
+#work nav .selected > a {			/* of the current page	  */
+	pointer-events:none;
+    cursor:default;
 }
 
 #wrap {
@@ -23,14 +24,22 @@
 	height:580px;
 }
 
-hr {
-	margin-bottom:20px;
-}
-
 #robot-images {
 	width:402px;
 	/*height:465px;*/
 	margin-bottom:20px;
+}
+
+hr {
+	margin-bottom:20px;
+}
+
+img {
+	border:1px solid #4A525A;
+}
+
+img:hover {
+	border:1px solid #1c74a5;
 }
 
 .work-images {
@@ -47,16 +56,9 @@ hr {
 }
 
 p {
-	font-size:15px;
-	text-indent:2em;			
-}
-
-img {
-	border:1px solid #4A525A;
-}
-
-img:hover {
-	border:1px solid #1c74a5;
+	font-size:16px;
+	text-indent:2em;
+	line-height:115%;
 }
 
 #qa-container {
@@ -83,8 +85,26 @@ img:hover {
  */
 
 /*
+ * Issues
+ *
+ * Small pictures of robot lose positioning when website is zoomed out
+ */
+
+/*
+ * Roadmap for text
+ *
+ * Settle on best font-size
+ * Increase height of page so font fits
+ * Adjust details of font to make more readable such as margin, padding, 
+ * line-height, word-spacing, letter-spacing and text-indent
+ * Reduce left and right margins to see what effect is has on readability, 
+ * also check top and bottom
+ */
+
+/*
  * Notes
  *
+ * Maybe change all elements to static positioning
  * Maybe make margins same as home page just for uniformity
  * Remember to do a spell check on qa text
  * To make robot text fit, can also decrease margins, decrease robot
@@ -106,7 +126,6 @@ img:hover {
  * or make use of captions in lightbox
  * Maybe increase height of footer to allow scrolling a bit below it
  * so it doesn't look so short at bottom of page.
- * maybe reduce unused space between both containers
  */
 
 /*

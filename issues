@@ -1,0 +1,6 @@
+Issues
+
+Link area extends to the psuedo elements on background tabs
+Right parenthesis ) is bolder than the rest of the chars, probably local
+issue with font Lucida Grande
+Color discrepancy between chromium and firefox

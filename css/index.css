@@ -6,7 +6,8 @@
  *					index.html
  *-----------------------------------------------------------------*/
 
-#home nav .home > a, #home nav .selected > a {
+#home nav .home > a, 				/* Disables the tab link  */
+#home nav .selected > a {			/* of the current page	  */
 	pointer-events: none;
     cursor: default;
 }
@@ -22,6 +23,7 @@
 	width:380px;
 	height:100px;
 	font-size:20px;
+	line-height:105%;
 }
 
 #news-container {
@@ -38,6 +40,7 @@
 
 #news-container p {
 	font-size:17px;
+	line-height:110%;
 }
 
 #featured-container {
@@ -52,6 +55,11 @@
 	text-align:center;
 }
 
+#featured-container p {
+	font-size:18px;
+	line-height:110%;
+}
+
 #featured-container a {				/* May be able to move to		   */
 	color:#145376;					/* common.css for all link styling */
 }									/* within regular text			   */
@@ -62,10 +70,6 @@
 
 #featured-container a:active {
 	color:#145376;
-}
-
-#featured-container p {
-	font-size:18px;
 }
 
 #featured-image {
