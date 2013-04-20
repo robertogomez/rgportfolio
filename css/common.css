@@ -10,14 +10,14 @@
  * Color reference chart
  *
  * element					   comment			color
- * main background			   mbg				#a3afb5
+ * main background			   mbg				#B6C7CF
  * header/footer background    hfbg				#202020
  * header/footer text		   hft				#FFFFFF
  */
 
 html,body {height:100%;}
 
-body {background-color:/*mbg*/#A3AFB5;}
+body {background-color:/*mbg*/#B6C7CF;}
 
 .site-container {				/* Hide overflowing footer padding and stop	 */
     overflow:hidden;			/* the vertical scrollbars. min-height crops */
@@ -43,8 +43,8 @@ h1 {
 	font-size:45px;
 }
 
-h1 a, #email a {				/* Link selectors for title and email grouped together */
-	color:/*hft*/#FFFFFF;
+h1 a, #email a {				/* Link selectors for title and  */
+	color:/*hft*/#FFFFFF;		/* email grouped together 		 */
 	text-decoration:none;
 }
 
@@ -95,7 +95,7 @@ nav {
 }
 
 .tabs .selected a { 							/* Colors when tab is active */
-	background:/*mbg*/#A3AFB5; 
+	background:/*mbg*/#B6C7CF; 
 	color:black; 
 }
 
@@ -115,7 +115,7 @@ nav {
 }
 
 .tabs .selected:before, .tabs .selected:after {
-	background:/*mbg*/#A3AFB5;
+	background:/*mbg*/#B6C7CF;
 	z-index:1;								/* Squares below circles */
 }
 
@@ -169,19 +169,67 @@ nav {
 	left:650px;
 }
 
-#footer {								/* Add long padding but essentially cancel     */
-	background-color:/*hfbg*/#202020;	/* it out with negative margin, thereby ending */
-	height:57px;						/* footer div space at end of browser window.  */
-	padding-bottom:32000px;
+#footer {								/* Add long padding but essentially	 */
+	background-color:/*hfbg*/#202020;	/* cancel it out with negative  	 */
+	height:57px;						/* margin, thereby ending footer div */
+	padding-bottom:32000px;				/* space at end of browser window.	 */
     margin-bottom:-32000px;
 }
 
-::selection {							/* Text selection color */
-	background:#ab988b;
+span {
+	color:#36855f;
 }
 
-::-moz-selection {
-	background:#ab988b;
+p a {
+	color:#145376;
+}
+
+p a:hover {
+	color:#1c74a5;
+}
+
+p a:active {
+	color:#145376;
+}
+
+*:not(a)::selection {				/* Selects everything but links and  	*/ 
+	background:#54575a;				/* spans for custom element selection	*/
+	color:#FFFFFF;					/* color. Necessary for separate		*/
+}									/* links and span selection color.		*/
+
+*:not(a)::-moz-selection {			/* NOTE: can't combine both selections	*/
+	background:#54575a;
+	color:#FFFFFF;
+}
+
+p a::selection {					/* Selects all links in paragraphs		*/
+	background:#54575a;
+	color:#1c74a5;
+}
+
+p a::-moz-selection {
+	background:#54575a;
+	color:#1c74a5;
+}
+
+h1 a::selection,					/* Selects the header title and 		*/
+#email a::selection {				/* footer email							*/
+	color:#B0B0B0;
+}
+
+h1 a::-moz-selection,
+#email a::-moz-selection {
+	color:#B0B0B0;
+}
+
+span::selection {					/* Selects the highlighted text in		*/
+	background:#54575a;				/* the intro-container					*/
+	color:#36855f;
+}
+
+span::-moz-selection {
+	background:#54575a;
+	color:#36855f;
 }
 
 /*
@@ -210,5 +258,7 @@ nav {
  *
  * Tab menu may not be fully supported in older versions of IE.
  * User selection prevention uses non-standard browser properties.
- * For older IE versions, may need to use unselectable attribute.
+ * For older IE versions, may need to use unselectable attribute
+ * default to simpler nav menu for IE.
+ * Current use of :not in selector of text selection is not supported in <IE8
  */

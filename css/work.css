@@ -16,10 +16,13 @@
 	height:1250px;
 }
 
-#robot-container {
+#robot-container, #qa-container {		/* Grouped together so only			*/
+	padding:40px 65px;					/* have to change in one location	*/
 	width:860px;
+}
+
+#robot-container {
 	height:675px;
-	padding:40px 65px;
 }
 
 #robot-images {
@@ -60,9 +63,7 @@ p {
 }
 
 #qa-container {
-	width:860px;
 	height:400px;
-	padding:40px 65px;
 }
 
 #email {
@@ -87,32 +88,12 @@ p {
  */
 
 /*
- * Roadmap for text
- *
- * Settle on best font-size
- * Increase height of page so font fits
- * Adjust details of font to make more readable such as margin, padding, 
- * line-height, word-spacing, letter-spacing and text-indent
- * Reduce left and right margins to see what effect is has on readability, 
- * also check top and bottom
- */
-
-/*
  * Notes
  *
- * Maybe change all elements to static positioning
- * Maybe make margins same as home page just for uniformity
+ * Remove border from linked in image
+ * Consider lining up header title with container titles
  * Remember to do a spell check on qa text
- * To make robot text fit, can also decrease margins, decrease robot
- * image sizes, increase height of page, and change size of images 
- * Can try making the robot main picture position in line with the text
- * so that the text can wrap around underneath it. Can still have small
- * images absolute positioned, and give the main image a large bottom-
- * margin so that text wraps below small images.
- * Look into increasing size between text lines like most websites
  * consider posting robot report on site, else may available on request
- * ask question of fancybox minwidth on stackoverflow, maybe first 
- * ask creator
  * The hover effect for images is also affecting them when they're 
  * viewed in fancybox, maybe apply hover only to link or image 
  * individually, else disable hover effect

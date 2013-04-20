@@ -60,18 +60,6 @@
 	line-height:110%;
 }
 
-#featured-container a {				/* May be able to move to		   */
-	color:#145376;					/* common.css for all link styling */
-}									/* within regular text			   */
-
-#featured-container a:hover {
-	color:#1c74a5;
-}
-
-#featured-container a:active {
-	color:#145376;
-}
-
 #featured-image {
 	position:absolute;
 	top:200px;
