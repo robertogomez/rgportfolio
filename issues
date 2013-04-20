@@ -7,3 +7,6 @@ Color discrepancy between chromium and firefox
 google website browsers different colors
 http://petapixel.com/2012/06/25/is-your-browser-color-managed/
 ask question of fancybox minwidth on stackoverflow, maybe first ask creator
+for compatibility issues with ie see
+google conditionally apply css
+http://css-tricks.com/how-to-create-an-ie-only-stylesheet/

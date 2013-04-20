@@ -53,7 +53,11 @@ img.work-images:hover {
 }
 
 #robot-poster {
-	margin-right:23px;
+	float:left;
+}
+
+#robot-mount {
+	float:right;
 }
 
 p {
@@ -84,7 +88,6 @@ p {
 /*
  * Issues
  *
- * Small pictures of robot lose positioning when website is zoomed out
  * still would like to figure out how to apply minwidth to single image
  * try using this.elemet in js see
  * http://jsfiddle.net/vkDcG/
