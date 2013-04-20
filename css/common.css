@@ -222,12 +222,12 @@ h1 a::-moz-selection,
 	color:#B0B0B0;
 }
 
-span::selection {					/* Selects the highlighted text in		*/
-	background:#54575a;				/* the intro-container					*/
-	color:#36855f;
-}
+span.highlight::selection {			/* Selects the highlighted text in		*/
+	background:#54575a;				/* the intro-container. Highlight class	*/
+	color:#36855f;					/* necessary for not selecting captions */
+}									/* in fancybox							*/
 
-span::-moz-selection {
+span.highlight::-moz-selection {
 	background:#54575a;
 	color:#36855f;
 }
@@ -244,6 +244,11 @@ span::-moz-selection {
 /*
  * Notes
  *
+ * In order to make border of linkedin img highlight for hover, would have to
+ * first set a border width, perhaps could make it same color as footer or 
+ * transparent. would have to apply border-radius to remove corners. 2nd,
+ * don't think it will work since when you hover the border will become easily
+ * viewable around the img, may not look good
  * Color reference chart needs update.
  * For ie compatibility, make alternate/simpler parts of website
  * ie instead of tab menu, just put word menu.
