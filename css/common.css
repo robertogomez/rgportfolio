@@ -72,15 +72,15 @@ nav {
 }
 
 .tabs li {
-	float:left;				/* Makes a horizontal row */
-	position:relative;		/* For abs. positioning of psueudo elements */
+	float:left;					/* Makes a horizontal row 					*/
+	position:relative;			/* For abs. positioning of psueudo elements */
 }
 
 .tabs a {
-	float:left;				/* Make them block level and only as wide as they need */
-	padding:8px 30px;
+	float:left;					/* Make them block level and only */
+	padding:8px 30px;			/* as wide as they need			  */
 	text-decoration:none;
-	color:black;			/* Default colors */ 
+	color:black;				/* Default colors */ 
 	background:gray;
 	-webkit-border-top-left-radius:12px;
 	-webkit-border-top-right-radius:12px;
@@ -90,11 +90,11 @@ nav {
 	border-top-right-radius:12px;
 }
 
-.tabs .selected {								/* Highest, active tab is on top */
+.tabs .selected {							/* Highest, active tab is on top */
 	z-index:3;
 }
 
-.tabs .selected a { 							/* Colors when tab is active */
+.tabs .selected a { 						/* Colors when tab is active */
 	background:/*mbg*/#B6C7CF; 
 	color:black; 
 }
@@ -105,8 +105,8 @@ nav {
 	bottom:0;
 }
    
-.tabs li:last-child:after,					/* Only the first, last, and active */
-.tabs li:last-child a:after,				/* tabs need pseudo elements at all */
+.tabs li:last-child:after,				/* Only the first, last, and active */
+.tabs li:last-child a:after,			/* tabs need pseudo elements at all */
 .tabs li:first-child:before,
 .tabs li:first-child a:before,
 .tabs .selected:after,   .tabs .selected:before,
@@ -233,20 +233,12 @@ span.highlight::-moz-selection {
 }
 
 /*
- * Issues
- *
- * Link area extends to the psuedo elements on background tabs
- * Right parenthesis ) is bolder than the rest of the chars, probably local
- * issue with font Lucida Grande
- * Color discrepancy between chromium and firefox
- */
-
-/*
  * Notes
  *
+ * consider darkening link color for most contrast, especially for work page
  * In order to make border of linkedin img highlight for hover, would have to
  * first set a border width, perhaps could make it same color as footer or 
- * transparent. would have to apply border-radius to remove corners. 2nd,
+ * transparent. would have to apply border-radius to remove corners.
  * don't think it will work since when you hover the border will become easily
  * viewable around the img, may not look good
  * Color reference chart needs update.

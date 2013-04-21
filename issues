@@ -10,3 +10,5 @@ ask question of fancybox minwidth on stackoverflow, maybe first ask creator
 for compatibility issues with ie see
 google conditionally apply css
 http://css-tricks.com/how-to-create-an-ie-only-stylesheet/
+on zoom out of work page, at least at 25% and 67%, location of tab menu is 
+lower than the header and the psuedo elements can be seen

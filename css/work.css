@@ -13,7 +13,7 @@
 }
 
 #wrap {
-	height:1250px;
+	height:1330px;
 }
 
 #robot-container, #qa-container {		/* Grouped together so only			*/
@@ -28,6 +28,11 @@
 #robot-images {
 	width:402px;
 	/*height:465px;*/
+}
+
+#robot-images, #qa-poster {
+	float:right;
+	margin-left:35px;
 	margin-bottom:20px;
 }
 
@@ -41,11 +46,6 @@ img.work-images {
 
 img.work-images:hover {
 	border:1px solid #1c74a5;
-}
-
-#robot-images, #qa-poster {
-	float:right;
-	margin-left:35px;
 }
 
 #robot-main-image {
@@ -71,11 +71,11 @@ p {
 }
 
 #email {
-	top:1270px;
+	top:1350px;
 }
 
 #linkedin {
-	top:1266px;
+	top:1346px;
 }
 
 /*
@@ -89,14 +89,11 @@ p {
  * Issues
  *
  * still would like to figure out how to apply minwidth to single image
- * try using this.elemet in js see
- * http://jsfiddle.net/vkDcG/
  */
 
 /*
  * Notes
  *
- * Remember to do a spell check on qa text
  * Add specifics, quantify, the word content of the works so its more 
  * specific, less general
  * Maybe increase height of footer to allow scrolling a bit below it

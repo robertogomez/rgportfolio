@@ -6,10 +6,12 @@ before release website update:
 	spell check using copy paste into libreoffice
 	mount image sizes optimized
 	remove http: from google cdn for jquery, see below
+	consider removing it from all links but look at bookmarked sites first
 	review word content, look at portfolio recommendation sites:
 	http://www.codinghorror.com/blog/2004/10/a-programmers-portfolio.html
 	http://restreaming.me/2012/08/31/a-good-programmers-portfolio/
 	http://www.lessannoyingcrm.com/articles/209/How_to_build_a_great_programmer_portfolio_site
+	test compatibility of site on browsershots.org
 
 set limit to width of source file text (can use vertical line in scite)
 because it seems that the text just keeps getting longer
