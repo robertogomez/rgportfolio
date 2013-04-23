@@ -236,6 +236,8 @@ span.highlight::-moz-selection {
  * Notes
  *
  * consider darkening link color for most contrast, especially for work page
+ * could you just replace linkedin img with another highlighted img version
+ * when hovered over?
  * In order to make border of linkedin img highlight for hover, would have to
  * first set a border width, perhaps could make it same color as footer or 
  * transparent. would have to apply border-radius to remove corners.
