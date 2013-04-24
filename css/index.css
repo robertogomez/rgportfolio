@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------
  *	Title:			index.css
  *	Author:			Roberto Gomez
- *	Date:			4/16/13
+ *	Date:			4/24/13
  *	Description:	CSS external stylesheet for homepage
  *					index.html
  *-----------------------------------------------------------------*/
@@ -84,23 +84,9 @@
 	top:650px;
 }
 
-/*#email, #linkedin, #github {
-	top:650px;
-}*/
-
 /*
  * Notes
  *
  * To fix order of text/element selection, maybe wrap them in individual divs
  * or maybe put all bottom links in one long div, easier to position too
- * Link to robot correctly links to robot container and scrolls to it,
- * but it cuts off header and can't scroll above it. should be functionally
- * equivalent to wiki pages with toc and headers or just make it link
- * directly to work page since robot container is on top anyways
- * Until make slideshow effect for news posts, in meantime can just post
- * only newest item and have a link that shows all news on a different page
- */
-
-/*
- * Incompatibilities
  */

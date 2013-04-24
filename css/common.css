@@ -43,8 +43,8 @@ h1 {
 	font-size:45px;
 }
 
-.header-footer-links {				/* Link selectors for title and  */
-	color:/*hft*/#FFFFFF;			/* email grouped together 		 */
+.header-footer-links {
+	color:/*hft*/#FFFFFF;
 	text-decoration:none;
 }
 
@@ -161,29 +161,23 @@ nav {
 
 #email {
 	position:absolute;
-	left:100px;
+	left:125px;
 }
 
 #social-media {
 	position:absolute;
-	left:630px;
+	left:650px;
 }
-
-/*#linkedin {
-	position:absolute;
-	left:630px;
-}
-
-#github {
-	position:absolute;
-	left:750px;
-}*/
 
 #footer {								/* Add long padding but essentially	 */
 	background-color:/*hfbg*/#202020;	/* cancel it out with negative  	 */
 	height:57px;						/* margin, thereby ending footer div */
 	padding-bottom:32000px;				/* space at end of browser window.	 */
     margin-bottom:-32000px;
+}
+
+.footer-text {							/* Makes non-link footer text white	 */
+	color:white;
 }
 
 span.highlight {
@@ -202,17 +196,24 @@ p a:active {
 	color:#145376;
 }
 
-*:not(a)::selection {				/* Selects everything but links and  	*/ 
-	background:#54575a;				/* spans for custom element selection	*/
-	color:#FFFFFF;					/* color. Necessary for separate		*/
-}									/* links and span selection color.		*/
+/*
+ * The following is for customizing the element
+ * selection color. The first pair use two not
+ * selectors to apply the color to all selected
+ * elements except a, spans, and .footer-text
+ */
 
-*:not(a)::-moz-selection {			/* NOTE: can't combine both selections	*/
+*:not(a):not(.footer-text)::selection {
 	background:#54575a;
 	color:#FFFFFF;
 }
 
-p a::selection {					/* Selects all links in paragraphs		*/
+*:not(a):not(.footer-text)::-moz-selection {
+	background:#54575a;
+	color:#FFFFFF;
+}
+
+p a::selection {					/* Selects all links in paragraphs */
 	background:#54575a;
 	color:#1c74a5;
 }
@@ -222,11 +223,19 @@ p a::-moz-selection {
 	color:#1c74a5;
 }
 
-.header-footer-links::selection	{				/* Selects the header title and 		*/
-	color:#B0B0B0;								/* footer email							*/
+.header-footer-links::selection	{		/* Selects the header title and */
+	color:#B0B0B0;						/* footer email					*/
 }
 
-.header-footer-links::selection {
+.header-footer-links::-moz-selection {
+	color:#B0B0B0;
+}
+
+.footer-text::selection {			/* Allows for highlighting text in the  */
+	color:#B0B0B0;					/* footer that isn't a link ie |		*/
+}
+
+.footer-text::-moz-selection {
 	color:#B0B0B0;
 }
 
@@ -244,13 +253,6 @@ span.highlight::-moz-selection {
  * Notes
  *
  * consider darkening link color for most contrast, especially for work page
- * could you just replace linkedin img with another highlighted img version
- * when hovered over?
- * In order to make border of linkedin img highlight for hover, would have to
- * first set a border width, perhaps could make it same color as footer or 
- * transparent. would have to apply border-radius to remove corners.
- * don't think it will work since when you hover the border will become easily
- * viewable around the img, may not look good
  * Color reference chart needs update.
  * For ie compatibility, make alternate/simpler parts of website
  * ie instead of tab menu, just put word menu.

@@ -36,6 +36,6 @@ p {									/* Using margin-bottom instead of <br> */
 	margin-bottom:1em;
 }
 
-#email, #linkedin, #github {
+#email, #social-media {
 	top:650px;
 }

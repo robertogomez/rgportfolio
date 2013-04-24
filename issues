@@ -1,5 +1,7 @@
 Issues
 
+should fix order of element selection its really bad on work and about page
+when selecting footer links whole page gets selected with same attributes
 Link area extends to the psuedo elements on background tabs
 Right parenthesis ) is bolder than the rest of the chars, probably local
 issue with font Lucida Grande
