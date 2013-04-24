@@ -80,17 +80,19 @@
 	z-index:0;
 }
 
-#email {
+#email, #social-media {
 	top:650px;
 }
 
-#linkedin {
-	top:646px;
-}
+/*#email, #linkedin, #github {
+	top:650px;
+}*/
 
 /*
  * Notes
  *
+ * To fix order of text/element selection, maybe wrap them in individual divs
+ * or maybe put all bottom links in one long div, easier to position too
  * Link to robot correctly links to robot container and scrolls to it,
  * but it cuts off header and can't scroll above it. should be functionally
  * equivalent to wiki pages with toc and headers or just make it link

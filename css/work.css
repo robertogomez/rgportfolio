@@ -81,12 +81,8 @@ p {
 	margin-left:3em;
 }
 
-#email {
+#email, #linkedin, #github {
 	top:1494px;
-}
-
-#linkedin {
-	top:1490px;
 }
 
 /*

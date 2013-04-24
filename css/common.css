@@ -43,16 +43,16 @@ h1 {
 	font-size:45px;
 }
 
-h1 a, #email a {				/* Link selectors for title and  */
-	color:/*hft*/#FFFFFF;		/* email grouped together 		 */
+.header-footer-links {				/* Link selectors for title and  */
+	color:/*hft*/#FFFFFF;			/* email grouped together 		 */
 	text-decoration:none;
 }
 
-h1 a:hover, #email a:hover {		/* Selector for when mouse is over link */
+.header-footer-links:hover {		/* Selector for when mouse is over link */
 	color:#B0B0B0;					/* Lighter color emulates highlighting  */
 }
 
-h1 a:active, #email a:active {		/* Selector for when link is selected */
+.header-footer-links:active {		/* Selector for when link is selected */
 	color:#FFFFFF;					/* Restores color of unselected link  */
 }
 
@@ -164,10 +164,20 @@ nav {
 	left:100px;
 }
 
-#linkedin {
+#social-media {
 	position:absolute;
-	left:650px;
+	left:630px;
 }
+
+/*#linkedin {
+	position:absolute;
+	left:630px;
+}
+
+#github {
+	position:absolute;
+	left:750px;
+}*/
 
 #footer {								/* Add long padding but essentially	 */
 	background-color:/*hfbg*/#202020;	/* cancel it out with negative  	 */
@@ -212,13 +222,11 @@ p a::-moz-selection {
 	color:#1c74a5;
 }
 
-h1 a::selection,					/* Selects the header title and 		*/
-#email a::selection {				/* footer email							*/
-	color:#B0B0B0;
+.header-footer-links::selection	{				/* Selects the header title and 		*/
+	color:#B0B0B0;								/* footer email							*/
 }
 
-h1 a::-moz-selection,
-#email a::-moz-selection {
+.header-footer-links::selection {
 	color:#B0B0B0;
 }
 
