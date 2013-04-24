@@ -12,17 +12,13 @@
     cursor:default;
 }
 
-#wrap {
-	height:1480px;
+#wrap {					/* Probably don't need to specify height 		  */
+	height:1474px;		/* since everything static except header & footer */			
 }
 
-#robot-container, #qa-container {		/* Grouped together so only			*/
-	padding:40px 65px;					/* have to change in one location	*/
-	width:860px;
-}
-
-#robot-container {
-	height:740px;
+.work-container {
+	padding:40px 65px;
+	width:864px;
 }
 
 #robot-images {
@@ -81,26 +77,22 @@ p {
 	text-indent:2em;
 }
 
-#qa-container {
-	height:400px;
-}
-
 #qa-date-wrap {
 	margin-left:3em;
 }
 
 #email {
-	top:1500px;
+	top:1494px;
 }
 
 #linkedin {
-	top:1496px;
+	top:1490px;
 }
 
 /*
  * Update
  *
- * Before site launch remember to update these:
+ * Before site launch remember to update:
  * Mount image need 1024x768 and new 800x600
  */
 
@@ -113,12 +105,11 @@ p {
 /*
  * Notes
  *
- * Consider decreasing about of wording/text
+ * Consider decreasing text
  * Add specifics, quantify, the word content of the works so its more 
  * specific, less general
  * Maybe increase height of footer to allow scrolling a bit below it
  * so it doesn't look so short at bottom of page.
- * Consider lining up header title with container titles
  */
 
 /*
