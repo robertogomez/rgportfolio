@@ -12,18 +12,12 @@
     cursor:default;
 }
 
-#wrap {					/* Probably don't need to specify height 		  */
-	height:1474px;		/* since everything static except header & footer */			
-}
-
 .work-container {
-	padding:40px 65px;
-	width:864px;
+	padding:40px 68px;
 }
 
 #robot-images {
 	width:402px;
-	/*height:465px;*/
 }
 
 #robot-images, #qa-poster {
