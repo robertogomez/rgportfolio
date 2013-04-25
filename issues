@@ -1,7 +1,5 @@
 Issues
 
-should fix order of element selection its really bad on work and about page
-when selecting footer links whole page gets selected with same attributes
 Link area extends to the psuedo elements on background tabs
 Right parenthesis ) is bolder than the rest of the chars, probably local
 issue with font Lucida Grande
@@ -14,3 +12,10 @@ google conditionally apply css
 http://css-tricks.com/how-to-create-an-ie-only-stylesheet/
 on zoom out of work page, at least at 25% and 67%, location of tab menu is 
 lower than the header and the psuedo elements can be seen
+
+compatibility across browsers
+
+selecting the footer text also selects everything else in chromium but not 
+in firfox
+when selecting footer text in firefox, the whole text group is highlighted
+gray instead of gradually/incrementally highlighting
