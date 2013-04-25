@@ -12,8 +12,9 @@
     cursor:default;
 }
 
-.work-container {
-	padding:40px 68px;
+.work-container {					/* For Chromium: Confines text selection */
+	position:relative;				/* to text only, otherwise the edge of	 */
+	padding:40px 68px;				/* the page is also selected.			 */
 }
 
 #robot-images {
