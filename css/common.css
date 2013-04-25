@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------
  *	Title:			common.css
  *	Author:			Roberto Gomez
- *	Date:			4/24/13
+ *	Date:			4/25/13
  *	Description:	CSS external stylesheet for all pages
  *					which share common elements
  *-----------------------------------------------------------------*/
@@ -32,19 +32,6 @@ h1 {
 	top:-50px;
 	left:65px;
 	font-size:45px;
-}
-
-.header-footer-links {
-	color:#FFFFFF;
-	text-decoration:none;
-}
-
-.header-footer-links:hover {		/* Selector for when mouse is over link */
-	color:#B0B0B0;					/* Lighter color emulates highlighting  */
-}
-
-.header-footer-links:active {		/* Selector for when link is selected */
-	color:#FFFFFF;					/* Restores color of unselected link  */
 }
 
 nav {
@@ -187,31 +174,57 @@ p a:active {
 	color:#145376;
 }
 
+.header-footer-links {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.header-footer-links:hover {		/* Selector for when mouse is over link */
+	color:#B0B0B0;					/* Lighter color emulates highlighting  */
+}
+
+.header-footer-links:active {		/* Selector for when link is selected	*/
+	color:#FFFFFF;					/* Restores color of unselected link 	*/
+}
+
 /*
  * The following is for customizing the element
  * selection color. The first pair use two not
  * selectors to apply the color to all selected
- * elements except a, spans, and .footer-text
+ * elements except a, spans, and .footer-text.
+ * RGB form is used to fix quirk in Chromium
+ * where it changes opacity for ::selection
+ * if it is set to 1, thus set it to .90.
  */
 
 *:not(a):not(.footer-text)::selection {
-	background:#54575a;
+	background:rgba(74,82,90,.90);
 	color:#FFFFFF;
 }
 
 *:not(a):not(.footer-text)::-moz-selection {
-	background:#54575a;
+	background:rgba(74,82,90,.90);
 	color:#FFFFFF;
 }
 
-p a::selection {					/* Selects all links in paragraphs */
-	background:#54575a;
+p a::selection {						/* Selects all links in paragraphs */
+	background:rgba(74,82,90,.90);
 	color:#1c74a5;
 }
 
 p a::-moz-selection {
-	background:#54575a;
+	background:rgba(74,82,90,.90);
 	color:#1c74a5;
+}
+
+span.highlight::selection {			/* Selects the highlighted text in		*/
+	background:rgba(74,82,90,.90);	/* the intro-container.					*/
+	color:#36855f;
+}
+
+span.highlight::-moz-selection {
+	background:rgba(74,82,90,.90);
+	color:#36855f;
 }
 
 .header-footer-links::selection	{	/* Eventhough using unselectable class  */
@@ -229,14 +242,3 @@ p a::-moz-selection {
 .footer-text::-moz-selection {
 	color:#B0B0B0;
 }
-
-span.highlight::selection {			/* Selects the highlighted text in		*/
-	background:#54575a;				/* the intro-container. Highlight class	*/
-	color:#36855f;					/* necessary for not selecting captions */
-}									/* in fancybox							*/
-
-span.highlight::-moz-selection {
-	background:#54575a;
-	color:#36855f;
-}
- 

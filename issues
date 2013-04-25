@@ -2,7 +2,6 @@ Issues
 
 firefox still selects unselectable classed elements thus may need to apply
 separate style for tab selection coloring or add to header-footer-links
-look into cross browser difference in colors
 same text selection is applied to fancybox captions
 Link area extends to the psuedo elements on background tabs
 Right parenthesis ) is bolder than the rest of the chars, probably local
@@ -11,8 +10,6 @@ ask question of fancybox minwidth on stackoverflow, maybe first ask creator
 for compatibility issues with ie see
 google conditionally apply css
 http://css-tricks.com/how-to-create-an-ie-only-stylesheet/
-on zoom out of work page, at least at 25% and 67%, location of tab menu is 
-lower than the header and the psuedo elements can be seen
 
 incompatibilities
 

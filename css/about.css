@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------------
  *	Title:			about.css
  *	Author:			Roberto Gomez
- *	Date:			4/24/13
+ *	Date:			4/25/13
  *	Description:	CSS external stylesheet for about page about.html				
  *-------------------------------------------------------------------*/
 
@@ -9,10 +9,6 @@
 #about nav .selected > a {			/* of the current page	  */
 	pointer-events: none;
     cursor: default;
-}
-
-#wrap {
-	height:630px;
 }
 
 #about-container {					/* For Chromium: Confines text selection */
