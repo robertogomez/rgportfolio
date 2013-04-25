@@ -83,10 +83,3 @@
 #email, #social-media {
 	top:650px;
 }
-
-/*
- * Notes
- *
- * To fix order of text/element selection, maybe wrap them in individual divs
- * or maybe put all bottom links in one long div, easier to position too
- */

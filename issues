@@ -1,11 +1,12 @@
 Issues
 
+firefox still selects unselectable classed elements thus may need to apply
+separate style for tab selection coloring or add to header-footer-links
+look into cross browser difference in colors
+same text selection is applied to fancybox captions
 Link area extends to the psuedo elements on background tabs
 Right parenthesis ) is bolder than the rest of the chars, probably local
 issue with font Lucida Grande
-Color discrepancy between chromium and firefox
-google website browsers different colors
-http://petapixel.com/2012/06/25/is-your-browser-color-managed/
 ask question of fancybox minwidth on stackoverflow, maybe first ask creator
 for compatibility issues with ie see
 google conditionally apply css
@@ -13,9 +14,15 @@ http://css-tricks.com/how-to-create-an-ie-only-stylesheet/
 on zoom out of work page, at least at 25% and 67%, location of tab menu is 
 lower than the header and the psuedo elements can be seen
 
-compatibility across browsers
+incompatibilities
 
-selecting the footer text also selects everything else in chromium but not 
-in firfox
-when selecting footer text in firefox, the whole text group is highlighted
-gray instead of gradually/incrementally highlighting
+common.css
+* Tab menu may not be fully supported in older versions of IE.
+ * User selection prevention uses non-standard browser properties.
+ * For older IE versions, may need to use unselectable attribute
+ * default to simpler nav menu for IE.
+ * Current use of :not in selector of text selection is not supported in <IE8
+ */
+
+work.css
+still would like to figure out how to apply minwidth to single image

@@ -6,18 +6,9 @@
  *					which share common elements
  *-----------------------------------------------------------------*/
 
-/*
- * Color reference chart
- *
- * element					   comment			color
- * main background			   mbg				#B6C7CF
- * header/footer background    hfbg				#202020
- * header/footer text		   hft				#FFFFFF
- */
-
 html,body {height:100%;}
 
-body {background-color:/*mbg*/#B6C7CF;}
+body {background-color:#B6C7CF;}
 
 .site-container {				/* Hide overflowing footer padding and stop	 */
     overflow:hidden;			/* the vertical scrollbars. min-height crops */
@@ -27,7 +18,7 @@ body {background-color:/*mbg*/#B6C7CF;}
 
 #header {
 	height:80px;
-	background-color:/*hfbg*/#202020;
+	background-color:#202020;
 }
 
 #wrap {							/* wrap div allows content to be centered    */
@@ -44,7 +35,7 @@ h1 {
 }
 
 .header-footer-links {
-	color:/*hft*/#FFFFFF;
+	color:#FFFFFF;
 	text-decoration:none;
 }
 
@@ -95,7 +86,7 @@ nav {
 }
 
 .tabs .selected a { 						/* Colors when tab is active */
-	background:/*mbg*/#B6C7CF; 
+	background:#B6C7CF; 
 	color:black; 
 }
 
@@ -115,7 +106,7 @@ nav {
 }
 
 .tabs .selected:before, .tabs .selected:after {
-	background:/*mbg*/#B6C7CF;
+	background:#B6C7CF;
 	z-index:1;								/* Squares below circles */
 }
 
@@ -139,7 +130,7 @@ nav {
 	-webkit-border-radius:10px;				/* Circles are circular */
 	-moz-border-radius:10px;
 	border-radius:10px;
-	background:/*hfbg*/#202020;
+	background:#202020;
 	z-index:2;								/* Circles over squares */
 }
 
@@ -149,7 +140,7 @@ nav {
 
 .tabs li:first-child.selected a:before,		/* First and last tabs have		 */
 .tabs li:last-child.selected a:after {		/* different outside color needs */
-	background:/*hfbg*/#202020;
+	background:#202020;
 }
 
 .tabs li a:before {
@@ -223,9 +214,9 @@ p a::-moz-selection {
 	color:#1c74a5;
 }
 
-.header-footer-links::selection	{		/* Selects the header title and */
-	color:#B0B0B0;						/* footer email					*/
-}
+.header-footer-links::selection	{	/* Eventhough using unselectable class  */
+	color:#B0B0B0;					/* on these components, firefox still	*/
+}									/* selects them, thus the need for this	*/
 
 .header-footer-links::-moz-selection {
 	color:#B0B0B0;
@@ -248,26 +239,4 @@ span.highlight::-moz-selection {
 	background:#54575a;
 	color:#36855f;
 }
-
-/*
- * Notes
- *
- * consider darkening link color for most contrast, especially for work page
- * Color reference chart needs update.
- * For ie compatibility, make alternate/simpler parts of website
- * ie instead of tab menu, just put word menu.
- * Make tabs hover color change or use new code for tabs.
- * May have to use alternate method for rounding out bottom of tabs
- * like use border-radius on adjacent background tabs but may not
- * work because of the psuedo elements involved, may show up on hover.
- */
-
-/*
- * Incompatibilities
- *
- * Tab menu may not be fully supported in older versions of IE.
- * User selection prevention uses non-standard browser properties.
- * For older IE versions, may need to use unselectable attribute
- * default to simpler nav menu for IE.
- * Current use of :not in selector of text selection is not supported in <IE8
- */
+ 
