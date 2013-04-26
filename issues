@@ -1,5 +1,7 @@
 Issues
 
+w3 html validator says having carrage return in middle of some tags like img
+src and coords is bad, results in long lines check if issue with scite
 firefox still selects unselectable classed elements thus may need to apply
 separate style for tab selection coloring or add to header-footer-links
 same text selection is applied to fancybox captions
