@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------
  *	Title:			common.css
  *	Author:			Roberto Gomez
- *	Date:			4/25/13
+ *	Date:			4/26/13
  *	Description:	CSS external stylesheet for all pages
  *					which share common elements
  *-----------------------------------------------------------------*/
@@ -29,9 +29,9 @@ body {background-color:#B6C7CF;}
 
 h1 {
 	position:absolute;
-	top:-50px;
-	left:65px;
-	font-size:45px;
+	top:-47px;
+	left:48px;
+	font-size:43px;
 }
 
 nav {
@@ -139,7 +139,7 @@ nav {
 
 #email {
 	position:absolute;
-	left:124px;
+	left:130px;
 }
 
 #social-media {
