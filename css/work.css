@@ -8,7 +8,7 @@
 
 #work nav .work > a, 				/* Disables the tab link  */
 #work nav .selected > a {			/* of the current page	  */
-	pointer-events:none;
+	pointer-events:none;			/* Unsupported in IE	  */
     cursor:default;
 }
 

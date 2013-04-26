@@ -8,7 +8,7 @@
 
 #home nav .home > a, 				/* Disables the tab link  */
 #home nav .selected > a {			/* of the current page	  */
-	pointer-events: none;
+	pointer-events: none;			/* Unsupported in IE	  */
     cursor: default;
 }
 

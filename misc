@@ -1,9 +1,0 @@
-misc
-
-May have found bug/limitation in fancybox: if minWidth/minHeight
-is specified for one image in an image set, it only works if you
-first click on the image. additionally you can't select next/prev
-images cause arrows are missing. can view other images if you 
-select them first, but when you select the image you applied 
-minWidth/minHeight using next/prev arrows, the property is not
-set and it is resized to dimension below the prop
