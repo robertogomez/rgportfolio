@@ -11,9 +11,10 @@
     cursor: default;
 }
 
-#about-container {					/* For Chromium: Confines text selection */
-	position:relative;				/* to text only, otherwise the edge of	 */
-	padding:49px 69px;				/* the page is also selected.			 */
+#about-container {					/* For Chromium: Use relative to confine */
+	position:relative;				/* text selection to text only,			 */
+	padding:49px 69px;				/* otherwise the edge of the page is 	 */
+	height:532px;					/* also selected.						 */
 }
 
 #about-container img {
