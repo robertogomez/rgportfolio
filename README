@@ -1,29 +1,40 @@
 README
 
-This project is an online portfolio to demonstrate some of
-my work and interests. Upon release of the website it will be a
-fairly simple fixed width layout, primarily focusing on HTML5 and
-CCS3 adherance. Further goals include creating a projects page and
-adding a fluid layout.
+NAME
+	rgportfolio - the portfolio website of Roberto Gomez, Jr.
 
-Acknowledgements
+DESCRIPTION
+	This project is an online portfolio, hosted at www.robertogomezjr.com, that 
+	serves to demonstrate some of my work and interests. It aims to present 
+	these in a minimal, accessible fashion. The importance of presentation 
+	and features is placed above the need for compatibility. However, efforts 
+	will be made to provide for access from older browsers. In its current 
+	state, the portfolio is a simple fixed width layout with three web pages. 
+	Further goals include creating a projects page and adding a fluid layout.
 
-The following are some great resources which I would like
-to thank that were very helpful in making this site.
+ACKNOWLEDGEMENTS
+	The following are some great resources which I would like
+	to thank that were very helpful in making this site.
 
-Extended footer from Joe Strong
-http://www.joestrong.co.uk/blog/css-tip-extend-your-sites-footer-to-the-bottom-of-the-page/
+	Extended footer from Joe Strong
+	http://www.joestrong.co.uk/blog/css-tip-extend-your-sites-footer-to-the-bottom-of-the-page/
 
-Centering of website content from David Walsh
-http://davidwalsh.name/center-website
+	Centering of website content from David Walsh
+	http://davidwalsh.name/center-website
 
-Reset stylesheet from Eric Meyer
-http://meyerweb.com/eric/tools/css/reset/
+	Reset stylesheet from Eric Meyer
+	http://meyerweb.com/eric/tools/css/reset/
 
-Tab menu and other stuff from Chris Coyier
-http://css-tricks.com/tabs-with-round-out-borders/
-http://css-tricks.com/pointer-events-current-nav/
-http://css-tricks.com/left-align-and-right-align-text-on-the-same-line/
+	Tab menu and other things from Chris Coyier
+	http://css-tricks.com/tabs-with-round-out-borders/
+	http://css-tricks.com/pointer-events-current-nav/
+	http://css-tricks.com/left-align-and-right-align-text-on-the-same-line/
 
-fancyBox from Janis Skarnelis
-http://fancyapps.com/fancybox/
+	fancyBox from Janis Skarnelis
+	http://fancyapps.com/fancybox/
+
+VERSION
+	1.0.2
+
+AUTHOR
+	Roberto Gomez, Jr.
