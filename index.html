@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Title:			index.html										-->
 <!-- Author:		Roberto Gomez									-->
-<!-- Date:			4/26/13											-->
+<!-- Date:			4/30/13											-->
 <!-- Description:	HTML file for homepage using					-->
 <!--				stylesheet style.css							-->
 <html>
@@ -10,12 +10,15 @@
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="css/common.css" rel="stylesheet" type="text/css">
 	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8-and-lower.css">
+	<![endif]-->
 	<link rel="icon" href="favicon.ico" sizes="16x16 32x32">
 	<meta charset="UTF-8">
 	<meta name="robots" content="index,follow">
 	<meta name="description" content="The personal portfolio of Roberto Gomez, 
-		Jr., an aspiring software and embedded systems developer from San Diego, 
-		CA.">
+		Jr., an aspiring software and embedded systems developer from 
+		San Diego, CA.">
 </head>
 <body id="home">
 	<div class="site-container">
@@ -89,7 +92,13 @@
 				<area shape="poly" coords="169,340,383,341,383,332,415,303,441,255,449,214,447,175,446,150,458,130,455,114,443,107,436,109,415,93,371,60,332,41,292,31,244,34,193,51,154,79,128,109,122,102,104,113,111,140,105,162,107,167,103,206,109,246,133,295,168,332,169,340" 
 				alt="Semi-Autonomous Robot" href="work.html">
 			</map>
+			<!--[if gte IE 9]><!-->
 			<div id="circle"></div>
+			<!--<![endif]-->
+			<!--[if lte IE 8]>
+			<img id="robot-background" src="img/robot-background.png" 
+			width="400" height="400" alt="Background circle for robot">
+			<![endif]-->
 			<h4 id="email" class="unselectable">
 				<a class="header-footer-links" 
 				href="mailto:hello@robertogomezjr.com">
