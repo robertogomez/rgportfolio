@@ -1,15 +1,14 @@
 /*-----------------------------------------------------------------
  *	Title:			index.css
  *	Author:			Roberto Gomez
- *	Date:			4/26/13
- *	Description:	CSS external stylesheet for homepage
- *					index.html
+ *	Date:			5/1/13
+ *	Description:	CSS external stylesheet for homepage index.html
  *-----------------------------------------------------------------*/
 
 #home nav .home > a, 				/* Disables the tab link  */
 #home nav .selected > a {			/* of the current page	  */
-	pointer-events: none;			/* Unsupported in IE	  */
-    cursor: default;
+	pointer-events:none;			/* Unsupported in IE	  */
+    cursor:default;
 }
 
 #wrap {

@@ -1,3 +1,11 @@
+/*-----------------------------------------------------------------
+ *	Title:			ie8-and-lower.css
+ *	Author:			Roberto Gomez
+ *	Date:			5/1/13
+ *	Description:	CSS external stylesheet with reduced styling
+ *					and features for IE 8 and below.
+ *-----------------------------------------------------------------*/
+
 ul {
 	position:absolute;
 	top:-30px;

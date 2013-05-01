@@ -1,3 +1,12 @@
+/*-----------------------------------------------------------------
+ *	Title:			tabs.css
+ *	Author:			Roberto Gomez
+ *	Date:			5/1/13
+ *	Description:	CSS external stylesheet for styling the
+ *					navigation menu into a tab interface. Rendered
+ *					in all browsers except IE 8 and below.
+ *-----------------------------------------------------------------*/
+
 .tabs li {
 	float:left;					/* Makes a horizontal row 					*/
 	position:relative;			/* For abs. positioning of psueudo elements */
