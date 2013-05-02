@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<!-- Title:			about.html										-->
-<!-- Author:		Roberto Gomez									-->
-<!-- Date:			4/26/13											-->
-<!-- Description:	HTML file for about page using					-->
-<!--				stylesheet about.css							-->
+<!-- Title:			about.html						-->
+<!-- Author:		Roberto Gomez					-->
+<!-- Date:			5/1/13							-->
+<!-- Description:	HTML file for about page		-->
 <html>
 <head>
 	<title>About Roberto Gomez Jr from San Diego, CA</title>
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="css/common.css" rel="stylesheet" type="text/css">
 	<link href="css/about.css" rel="stylesheet" type="text/css">
+	<!-- Targets all non-IE browsers but includes IE 9 & up,  -->
+	<!-- since 10 dropped support for conditional comments.	  -->
+	<!--[if IE 9]><!-->
+		<link href="css/tabs.css" rel="stylesheet" type="text/css">
+	<!--<![endif]-->
+	<!--[if lte IE 8]>
+		<link href="css/ie8-and-lower.css" rel="stylesheet" type="text/css">
+	<![endif]-->
 	<link rel="icon" href="favicon.ico" sizes="16x16 32x32">
 	<meta charset="UTF-8">
 	<meta name="robots" content="index,follow">
@@ -36,7 +43,15 @@
 						<a href="projects.html"><h4>Projects</h4></a>
 					</li>-->
 					<li class="about selected">
-						<a href="about.html"><h4>About</h4></a>
+						<!-- IE 9 fix: Necessary for preventing the psuedo  -->
+						<!-- elements of the selected tab from becoming 	-->
+						<!-- active links in adjacent tabs.					-->
+						<!--[if !IE]><!-->
+							<a href="about.html"><h4>About</h4></a>
+						<!--<![endif]-->
+						<!--[if IE]>
+							<a><h4>About</h4></a>
+						<![endif]-->
 					</li>
 				</ul>
 			</nav>
