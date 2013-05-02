@@ -1,5 +1,8 @@
 CHANGES - rgportfolio
 
+1.1.1 Thu May 2 12:49:56 2013
+	- Fixed positioning of work page footer links
+
 1.1.0 Wed May 1 21:23:22 2013
 	- Added compatibility with IE browsers 7-9 mainly by
 	  using conditional comments
