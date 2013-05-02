@@ -1,5 +1,11 @@
 CHANGES - rgportfolio
 
+1.1.0 Wed May 1 21:23:22 2013
+	- Added compatibility with IE browsers 7-9 mainly by
+	  using conditional comments
+	- IE 8 and below use a simple text navigation menu instead of tabs
+	- Disabled javascript for IE 8 and below
+
 1.0.3 Sat Apr 27 13:15:33 2013
 	- Updated linkedin uri to linkedin.com/in/robertogomezjr
 

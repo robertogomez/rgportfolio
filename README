@@ -17,10 +17,8 @@ ACKNOWLEDGEMENTS
 	to thank that were very helpful in making this site.
 
 	Extended footer from Joe Strong
-	http://www.joestrong.co.uk/blog/css-tip-extend-your-sites-footer-to-the-bottom-of-the-page/
-
-	Centering of website content from David Walsh
-	http://davidwalsh.name/center-website
+	http://www.joestrong.co.uk/blog/css-tip-extend-your-sites
+	-footer-to-the-bottom-of-the-page/
 
 	Reset stylesheet from Eric Meyer
 	http://meyerweb.com/eric/tools/css/reset/
@@ -34,7 +32,7 @@ ACKNOWLEDGEMENTS
 	http://fancyapps.com/fancybox/
 
 VERSION
-	1.0.3
+	1.1.0
 
 AUTHOR
 	Roberto Gomez, Jr.
