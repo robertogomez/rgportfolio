@@ -30,12 +30,8 @@ ul a {
 	text-decoration:none;	
 }
 
-ul a:hover {
+.unselected a:hover {
 	color:#B0B0B0;
-}
-
-ul a:active {						/* :acitve doesn't seem to work in IE 8	*/
-	color:white;
 }
 
 .selected a {						/* Underline the link of the currently	*/

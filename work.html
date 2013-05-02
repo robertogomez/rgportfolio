@@ -23,22 +23,24 @@
 	<meta name="description" content="A brief overview of Roberto's work 
 		experience, including his robotics research and quality assurance 
 		internship.">
-	<!-- Load jQuery from Google CDN -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<!-- Load jQuery from local copy if Google CDN fails -->
-	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-	<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.4" 
-		type="text/css" media="screen"/>
-	<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.4"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$(".fancybox").fancybox({
-				padding : 0,
-				nextEffect: 'none',
-				prevEffect: 'none'
+	<!--[if IE 9]><!-->
+		<!-- Load jQuery from Google CDN -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- Load jQuery from local copy if Google CDN fails -->
+		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+		<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.4" 
+			type="text/css" media="screen"/>
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.4"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox({
+					padding : 0,
+					nextEffect: 'none',
+					prevEffect: 'none'
+				});
 			});
-		});
-	</script>
+		</script>
+	<!--<![endif]-->
 </head>
 <body id="work">
 	<div class="site-container">
@@ -50,7 +52,7 @@
 			</h1>
 			<nav class="unselectable">
 				<ul class="tabs">
-					<li class="home">
+					<li class="home unselected">
 						<a href="index.html"><h4>Home</h4></a>
 					</li>
 					<li class="work selected">
@@ -64,10 +66,10 @@
 							<a><h4>Work</h4></a>
 						<![endif]-->
 					</li>
-					<!--<li class="projects">
+					<!--<li class="projects unselected">
 						<a href="projects.html"><h4>Projects</h4></a>
 					</li>-->
-					<li class="about">
+					<li class="about unselected">
 						<a href="about.html"><h4>About</h4></a>
 					</li>
 				</ul>
