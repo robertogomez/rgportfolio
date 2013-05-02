@@ -58,4 +58,5 @@ hr {							/* Styling for line separator */
 	border: 0;					/* May need to add margin	  */
 	height: 1px;
 	background-color: black;
+	color: black;				/* Needed for IE 7 */
 }

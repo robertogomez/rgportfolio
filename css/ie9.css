@@ -1,0 +1,10 @@
+/*-----------------------------------------------------------------
+ *	Title:			ie9.css
+ *	Author:			Roberto Gomez
+ *	Date:			5/1/13
+ *	Description:	CSS external stylesheet for IE 9
+ *-----------------------------------------------------------------*/
+
+#email, #social-media {
+	top:1515px;
+}
