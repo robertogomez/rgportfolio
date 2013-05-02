@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------
  *	Title:			work.css
  *	Author:			Roberto Gomez
- *	Date:			5/1/13
+ *	Date:			5/2/13
  *	Description:	CSS external stylesheet for work page work.html
  *-----------------------------------------------------------------*/
 
@@ -75,6 +75,6 @@ p {
 	margin-left:3em;
 }
 
-#email, #social-media {
-	top:1494px;
-}
+#email, #social-media {				/* Using margin-top instead of arbitrary */
+	margin-top:59px;				/* top because gives better positioning  */
+}									/* across different browsers			 */
