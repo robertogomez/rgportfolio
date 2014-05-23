@@ -70,10 +70,6 @@ nav {
 	color:white;
 }
 
-span.highlight {
-	color:#36855f;
-}
-
 p a {
 	color:#145376;
 }
@@ -127,16 +123,6 @@ p a::selection {						/* Selects all links in paragraphs */
 p a::-moz-selection {
 	background:rgba(74,82,90,.90);
 	color:#1c74a5;
-}
-
-span.highlight::selection {			/* Selects the highlighted text in		*/
-	background:rgba(74,82,90,.90);	/* the intro-container.					*/
-	color:#36855f;
-}
-
-span.highlight::-moz-selection {
-	background:rgba(74,82,90,.90);
-	color:#36855f;
 }
 
 .header-footer-links::selection	{	/* Eventhough using unselectable class  */
