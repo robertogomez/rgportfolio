@@ -1,133 +1,71 @@
 <!DOCTYPE html>
-<!-- Title:			index.html						-->
-<!-- Author:		Roberto Gomez					-->
-<!-- Date:			5/16/13							-->
-<!-- Description:	HTML file for homepage			-->
-<html>
-<head>
-	<title>Roberto Gomez Jr | Computer Engineering student at SDSU</title>
-	<link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="css/common.css" rel="stylesheet" type="text/css">
-	<link href="css/index.css" rel="stylesheet" type="text/css">
-	<!-- Targets all non-IE browsers but includes IE 9 & up,  -->
-	<!-- since 10 dropped support for conditional comments.	  -->
-	<!--[if IE 9]><!-->
-		<link href="css/tabs.css" rel="stylesheet" type="text/css">
-	<!--<![endif]-->
-	<!--[if lte IE 8]>
-		<link href="css/ie8-and-lower.css" rel="stylesheet" type="text/css">
-	<![endif]-->
-	<link rel="icon" href="favicon.ico" sizes="16x16 32x32">
-	<meta charset="UTF-8">
-	<meta name="robots" content="index,follow">
-	<meta name="description" content="The professional portfolio of Roberto 
-		Gomez, Jr., a student of Computer Engineering at San Diego State
-        University.">
-</head>
-<body id="home">
-	<div class="site-container">
-		<div id="header"></div>
-		<div id="wrap">
-			<h1 class="unselectable">
-				<a class="header-footer-links" href="index.html">
-				Roberto Gomez Jr</a>
-			</h1>
-			<nav class="unselectable">
-				<ul class="tabs">
-					<li class="home selected">
-						<!-- IE 9 fix: Necessary for preventing the psuedo  -->
-						<!-- elements of the selected tab from becoming 	-->
-						<!-- active links in adjacent tabs.					-->
-						<!--[if !IE]><!-->
-							<a href="index.html"><h4>Home</h4></a>
-						<!--<![endif]-->
-						<!--[if IE]>
-							<a><h4>Home</h4></a>
-						<![endif]-->
-					</li>
-					<li class="work unselected">
-						<a href="work.html"><h4>Work</h4></a>
-					</li>
-					<!--<li class="projects unselected">
-						<a href="projects.html"><h4>Projects</h4></a>
-					</li>-->
-					<li class="about unselected">
-						<a href="about.html"><h4>About</h4></a>
-					</li>
-				</ul>
-			</nav>
-			<div id="intro-container">
-				<p>
-					Welcome to my online portfolio! I'm a senior Computer
-                    Engineering student at SDSU. Here you will find examples
-                    of my previous work and some background information about
-                    myself.
-				</p>
-			</div>
-			<div id="news-container">
-				<h3 style="float:left">Website Launched!</h3>
-				<h3 style="float:right">April 26, 2013</h3>
-				<!-- So later text does not float -->
-				<div style="clear:both;"></div>
-				<hr>
-				<p>
-					After revising the portfolio's design and content, I have 
-					finally settled on an initial version for release. Since 
-					this is the first website I have created, it is fairly 
-					simplistic at the moment, but I am enthusiastic about 
-					improving it. I plan to implement a fluid layout so that 
-					the portfolio may be easily viewed from different screen 
-					sizes and to add a projects page to demonstrate some of my 
-					interests in programming.
-				</p>
-			</div>
-			<div id="featured-container">
-				<h2>Semi-Autonomous Robot</h2>
-				<hr>
-				<p>
-					In the summer of 2012 I had the opportunity to 
-					develop a <a href="work.html">semi-autonomous 
-					robot</a> with object avoidance capabilities at SDSU. 
-					It was a very fun project that increased my knowledge 
-					of microcontrollers and sensors.
-				</p>
-			</div>
-			<img id="featured-image" 
-				src="img/robot-borderless.png" width="500" height="375" 
-				alt="Semi-Autonomous Robot" usemap="#map">
-			<map name="map">
-				<!-- #$-:Image map file created by GIMP Image Map plug-in -->
-				<!-- #$-:GIMP Image Map plug-in by Maurits Rijk			  -->
-				<!-- #$-:Please do not edit lines starting with "#$"	  -->
-				<!-- #$VERSION:2.3										  -->
-				<!-- #$AUTHOR:Unknown									  -->
-				<area shape="poly" coords="169,340,383,341,383,332,415,303,441,255,449,214,447,175,446,150,458,130,455,114,443,107,436,109,415,93,371,60,332,41,292,31,244,34,193,51,154,79,128,109,122,102,104,113,111,140,105,162,107,167,103,206,109,246,133,295,168,332,169,340" 
-				alt="Semi-Autonomous Robot" href="work.html">
-			</map>
-			<!--[if IE 9]><!-->
-				<div id="circle"></div>
-			<!--<![endif]-->
-			<!--[if lte IE 8]>
-				<img id="robot-background" src="img/robot-background.png" 
-				width="400" height="400" alt="Background circle for robot">
-			<![endif]-->
-			<h4 id="email" class="unselectable">
-				<a class="header-footer-links" 
-				href="mailto:mail@robertogomezjr.com">
-				mail@robertogomezjr.com</a>
-			</h4>
-			<h4 id="social-media" class="unselectable">
-				<a class="header-footer-links" 
-				href="//linkedin.com/in/robertogomezjr">LinkedIn</a>
-				<span class="footer-text"> | </span>
-				<a class="header-footer-links" 
-				href="//github.com/robertogomez">GitHub</a>
-				<span class="footer-text"> | </span>
-				<a class="header-footer-links" 
-				href="//stackoverflow.com/users/2352473/roberto-gomez">Stack Overflow</a>
-			</h4>
-		</div>
-		<div id="footer"></div>
-	</div>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The professional portfolio of Roberto
+            Gomez, Jr., a student of Computer Engineering at San Diego State University.">
+        <meta name="author" content="Roberto Gomez, Jr.">
+        <link rel="shortcut icon" href="favicon.ico" sizes="16x16 32x32">
+        <title>Roberto Gomez Jr | Computer Engineering student at SDSU</title>
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"
+                    data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Begin page content -->
+        <div class="container">
+            <div class="page-header">
+                <h1>Sticky footer with fixed navbar</h1>
+            </div>
+            <p class="lead">
+                Pin a fixed-height footer to the bottom of the viewport in
+                desktop browsers with this custom HTML and CSS. A fixed navbar
+                has been added with <code>padding-top: 60px;</code> on the
+                <code>body > .container</code>.
+            </p>
+            <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                <p class="text-muted">Place sticky footer content here.</p>
+            </div>
+        </div>
+
+        <!-- jQuery and Bootstrap JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- jQuery fallback -->
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
+
