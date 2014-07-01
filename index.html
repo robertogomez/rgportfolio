@@ -43,16 +43,71 @@
 
         <!-- Begin page content -->
         <div class="container">
-            <div class="page-header">
-                <h1>Sticky footer with fixed navbar</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="lead">
+                        Welcome to my online portfolio! I'm a senior Computer
+                        Engineering student at SDSU. Here you will find examples
+                        of my previous work and some background information about
+                        myself.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h3 style="float:left">Website Launched!</h3>
+                    <h3 style="float:right">April 26, 2013</h3>
+                    <!-- So later text does not float -->
+                    <div style="clear:both;"></div>
+                    <hr>
+                    <p>
+                        After revising the portfolio's design and content, I have
+                        finally settled on an initial version for release. Since
+                        this is the first website I have created, it is fairly
+                        simplistic at the moment, but I am enthusiastic about
+                        improving it. I plan to implement a fluid layout so that
+                        the portfolio may be easily viewed from different screen
+                        sizes and to add a projects page to demonstrate some of my
+                        interests in programming.
+                    </p>
+                </div>
             </div>
-            <p class="lead">
-                Pin a fixed-height footer to the bottom of the viewport in
-                desktop browsers with this custom HTML and CSS. A fixed navbar
-                has been added with <code>padding-top: 60px;</code> on the
-                <code>body > .container</code>.
-            </p>
-            <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img id="featured-image" class="center-block img-responsive"
+                    src="img/robot-borderless.png" alt="Semi-Autonomous Robot"
+                    width="500" height="375" usemap="#map">
+                    <map name="map">
+                            <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+                            <!-- #$-:GIMP Image Map plug-in by Maurits Rijk           -->
+                            <!-- #$-:Please do not edit lines starting with "#$"      -->
+                            <!-- #$VERSION:2.3                                        -->
+                            <!-- #$AUTHOR:Unknown                                     -->
+                            <area shape="poly" coords="169,340,383,341,383,332,
+                            415,303,441,255,449,214,447,175,446,150,458,130,455,
+                            114,443,107,436,109,415,93,371,60,332,41,292,31,244,
+                            34,193,51,154,79,128,109,122,102,104,113,111,140,105,
+                            162,107,167,103,206,109,246,133,295,168,332,169,340"
+                            alt="Semi-Autonomous Robot" href="work.html">
+                    </map>
+                    <!--[if IE 9]><!-->
+                            <div id="circle"></div>
+                    <!--<![endif]-->
+                    <!--[if lte IE 8]>
+                            <img id="robot-background" src="img/robot-background.png"
+                            width="400" height="400" alt="Background circle for robot">
+                    <![endif]-->
+                </div>
+                <div class="col-sm-6">
+                    <h2>Semi-Autonomous Robot</h2>
+                    <hr>
+                    <p>
+                        In the summer of 2012 I had the opportunity to
+                        develop a <a href="work.html">semi-autonomous
+                        robot</a> with object avoidance capabilities at SDSU.
+                        It was a very fun project that increased my knowledge
+                        of microcontrollers and sensors.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div id="footer">
