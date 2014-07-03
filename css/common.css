@@ -2,6 +2,8 @@
     text-align: center;
 }
 
+#footer ul { padding: 0; }
+
 #footer ul li {
     display: inline;
 }
