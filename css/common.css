@@ -1,6 +1,12 @@
-#footer { text-align: center; }
+#footer {
+    text-align: center;
+    line-height: 60px;      /* For vertically-centering ul */
+}
 
-#footer ul { padding: 0; }
+#footer ul {
+    padding: 0;
+    margin: 0;
+}
 
 #footer ul li { display: inline; }
 
