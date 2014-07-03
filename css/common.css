@@ -2,15 +2,15 @@ hr {
     margin: 0.5em 0;
 }
 
-#footer {
+footer {
     text-align: center;
     line-height: 60px;      /* For vertically-centering ul */
 }
 
-#footer ul {
+footer ul {
     padding: 0;
     margin: 0;
 }
 
-#footer ul li { display: inline; }
+footer ul li { display: inline; }
 
