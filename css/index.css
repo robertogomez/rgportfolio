@@ -1,11 +1,9 @@
-h2 {
-    font-size: 1.75em;
-    text-align: center;
+#news-section h2 {
+    font-size: 1.25em;
 }
 
-h3 {
-    margin: 0;
-    font-size: 1.25em;
-    font-weight: normal;
+#featured-section h2 {
+    font-size: 1.75em;
+    text-align: center;
 }
 
