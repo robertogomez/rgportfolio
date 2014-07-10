@@ -10,6 +10,8 @@ h1,h2 { margin: 0; }
     font-weight: bold;
 }
 
+nav { font-size: 1.2em; }
+
 hr {
     margin: 0.5em 0;
 }
@@ -17,6 +19,7 @@ hr {
 footer {
     text-align: center;
     line-height: 60px;      /* For vertically-centering ul */
+    font-size: 1.1em;
 }
 
 footer ul {
