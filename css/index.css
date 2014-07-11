@@ -3,10 +3,20 @@
     margin-bottom: 20px;
 }
 
-/*#news-section { margin-bottom: 1em; }*/
-
 #news-section h2 {
     font-size: 1.25em;
+}
+
+@media (min-width: 768px) {
+    #featured-section { padding-top: 50px; }
+}
+
+@media (min-width: 992px) {
+    #featured-image { margin-top: -50px; }
+}
+
+@media (min-width: 1200px) {
+    #featured-section { padding-top: 75px; }
 }
 
 #featured-section h2 {
