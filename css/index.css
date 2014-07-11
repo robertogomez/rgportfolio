@@ -3,7 +3,20 @@
     margin-bottom: 20px;
 }
 
-/*#news-section { margin-bottom: 1em; }*/
+#featured-section div {         /* Vertically-center the featured-section text */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Set the correct height of the column */
+/* depending on the viewport width      */
+@media (min-width: 768px) { .vcenter { height: 259px; } }
+
+@media (min-width: 992px) { .vcenter { height: 341px; } }
+
+@media (min-width: 1200px) { .vcenter { height: 375px; } }
+
+.vcenter { display: table; }
 
 #news-section h2 {
     font-size: 1.25em;
