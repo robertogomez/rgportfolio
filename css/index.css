@@ -1,6 +1,9 @@
 #intro-section {
     font-size: 1.2em;
+    margin-bottom: 20px;
 }
+
+/*#news-section { margin-bottom: 1em; }*/
 
 #news-section h2 {
     font-size: 1.25em;
