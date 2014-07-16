@@ -23,13 +23,12 @@
 
 /* Set the correct height of the column */
 /* depending on the viewport width      */
-@media (min-width: 768px) { .vcenter { height: 259px; } }
+@media (min-width: 768px) { .vcenter { height: 245px; } }
 
 @media (min-width: 992px) {
-    .vcenter { height: 341px; }
+    .vcenter { height: 320px; }
 
     /* Move the featured content upward */
-    .row + .row .col-sm-6 { margin-top: -50px; }}
-
-@media (min-width: 1200px) { .vcenter { height: 375px; } }
+    .row + .row .col-sm-6 { margin-top: -50px; }
+}
 
