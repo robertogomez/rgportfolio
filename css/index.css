@@ -32,3 +32,6 @@
     .row + .row .col-sm-6 { margin-top: -50px; }
 }
 
+/* Add top and bottom padding to the featured image for viewports ≤ 768px */
+@media (max-width: 768px) { #featured-image { padding: 20px 0; } }
+
