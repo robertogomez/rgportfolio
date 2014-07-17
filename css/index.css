@@ -10,11 +10,11 @@
 
 /* Set the correct height of the column */
 /* depending on the viewport width      */
-@media (min-width: 768px) { .vcenter { height: 307px; } }
+@media (min-width: 768px) { #featured-section { height: 307px; } }
 
-@media (min-width: 992px) { .vcenter { height: 400px; } }
+@media (min-width: 992px) { #featured-section { height: 400px; } }
 
-.vcenter { display: table; }
+#featured-section { display: table; }
 
 #news-section h2 {
     font-size: 1.25em;
