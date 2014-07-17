@@ -1,7 +1,15 @@
+html {                          /* Required for sticky footer */
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: "Lucida Grande", "Lucida Sans Unicode",
                  "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-bottom: 60px;        /* Set to height of stick footer */
 }
+
+body > .container { padding: 70px 15px 10px; }
 
 h1, h2 { margin: 0; }
 
@@ -19,10 +27,15 @@ hr {
     background-color: black;
 }
 
-footer {
+footer {                        /* Sticky footer */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
     font-size: 1.1em;
     line-height: 60px;          /* For vertically aligning the ul */
     text-align: center;
+    background-color: #f5f5f5;
 }
 
 footer ul {
