@@ -3,22 +3,7 @@
     margin-bottom: 20px;
 }
 
-#featured-section div {         /* Vertically-center the featured-section text */
-    display: table-cell;
-    vertical-align: middle;
-}
-
-/* Set the correct height of the column */
-/* depending on the viewport width      */
-@media (min-width: 768px) { #featured-section { height: 307px; } }
-
-@media (min-width: 992px) { #featured-section { height: 400px; } }
-
-#featured-section { display: table; }
-
-#news-section h2 {
-    font-size: 1.25em;
-}
+#news-section h2 { font-size: 1.25em; }
 
 #featured-section h2 {
     font-size: 1.75em;
@@ -27,6 +12,19 @@
 
 #news-section p, #featured-section p { font-size: 1.1em; }
 
+#featured-section div {         /* Vertically align the featured text */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#featured-section { display: table; }
+
 /* Add padding to the featured image for viewports less than 768px */
 @media (max-width: 767px) { #featured-image { padding: 20px 0; } }
+
+/* To vertically align the featured text, the height */
+/* of its column must match the height of the row    */
+@media (min-width: 768px) { #featured-section { height: 307px; } }
+
+@media (min-width: 992px) { #featured-section { height: 400px; } }
 
