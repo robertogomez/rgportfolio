@@ -12,7 +12,12 @@ h1, h2 { margin: 0; }
 
 nav { font-size: 1.2em; }
 
-hr { margin: 0.5em 0; }
+hr {
+    margin: 0.5em 0;
+    height: 1px;                /* Overwrite bootstrap defaults */
+    border: none;
+    background-color: black;
+}
 
 footer {
     font-size: 1.1em;
