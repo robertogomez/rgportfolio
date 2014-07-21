@@ -61,3 +61,27 @@ a:hover { color: #1c74a5; }
 
 a:active { color: #145376; }
 
+::-moz-selection {
+    color: #ffffff;
+    background: #4a525a;
+}
+
+/* Fix the selection color in Chrome by reducing the opacity */
+/* Hex value is kept for IE 8 support */
+::selection {
+    color: #ffffff;
+    background: #4a525a;
+    background: rgba(74,82,90,.9);
+}
+
+body > .container a::-moz-selection {
+    color: #1c74a5;
+    background: #4a525a;
+}
+
+body > .container a::selection {
+    color: #1c74a5;
+    background: #4a525a;
+    background: rgba(74,82,90,.9);
+}
+
