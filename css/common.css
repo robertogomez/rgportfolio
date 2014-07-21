@@ -4,9 +4,10 @@ html {                          /* Required for sticky footer */
 }
 
 body {
+    margin-bottom: 60px;        /* Set to height of sticky footer */
+    background: #b6c7cf;
     font-family: "Lucida Grande", "Lucida Sans Unicode",
                  "Trebuchet MS", Arial, Helvetica, sans-serif;
-    margin-bottom: 60px;        /* Set to height of stick footer */
 }
 
 body > .container { padding: 70px 15px 10px; }
@@ -53,4 +54,10 @@ footer > ul > li > a:focus {
     color: #ffffff;
     text-decoration: none;
 }
+
+a { color: #145376; }
+
+a:hover { color: #1c74a5; }
+
+a:active { color: #145376; }
 
