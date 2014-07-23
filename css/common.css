@@ -11,12 +11,12 @@ body {
 
 body > .container { padding: 70px 15px 10px; }
 
-h1, h2 { margin: 0; }
-
-.navbar-brand {
-    font-size: 0.75em;
-    font-weight: bold;
+h1, h2 {
+    margin: 0;
+    font-weight: 600;
 }
+
+.navbar-brand { font-size: 0.75em; }
 
 nav { font-size: 1.2em; }
 
