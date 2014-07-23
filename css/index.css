@@ -20,6 +20,9 @@
 
 #featured-section { display: table; }
 
+/* Remove bottom margin from last p element */
+#featured-section > div > p { margin: 0; }
+
 /* Add padding to the featured image for viewports less than 768px */
 @media (max-width: 767px) { #featured-image { padding: 20px 0; } }
 

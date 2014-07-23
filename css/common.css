@@ -9,7 +9,7 @@ body {
     font-family: "Open Sans", Arial, sans-serif;
 }
 
-body > .container { padding: 70px 15px 10px; }
+body > .container { padding: 70px 15px 20px; }
 
 h1, h2 {
     margin: 0;
