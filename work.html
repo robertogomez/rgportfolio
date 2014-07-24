@@ -1,256 +1,64 @@
 <!DOCTYPE html>
-<!-- Title:			work.html						-->
-<!-- Author:		Roberto Gomez					-->
-<!-- Date:			5/2/13							-->
-<!-- Description:	HTML file for work page			-->
-<html>
-<head>
-	<title>Work History of Roberto Gomez Jr</title>
-	<link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="css/common.css" rel="stylesheet" type="text/css">
-	<link href="css/work.css" rel="stylesheet" type="text/css">
-	<!-- Targets all non-IE browsers but includes IE 9 & up,  -->
-	<!-- since 10 dropped support for conditional comments.	  -->
-	<!--[if IE 9]><!-->
-		<link href="css/tabs.css" rel="stylesheet" type="text/css">
-	<!--<![endif]-->
-	<!--[if lte IE 8]>
-		<link href="css/ie8-and-lower.css" rel="stylesheet" type="text/css">
-	<![endif]-->
-	<link rel="icon" href="favicon.ico" sizes="16x16 32x32">
-	<meta charset="UTF-8">
-	<meta name="robots" content="index,follow">
-	<meta name="description" content="A brief overview of Roberto's work 
-		experience, including his robotics research and quality assurance 
-		internship.">
-	<!--[if IE 9]><!-->
-		<!-- Load jQuery from Google CDN -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<!-- Load jQuery from local copy if Google CDN fails -->
-		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-		<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.4" 
-			type="text/css" media="screen"/>
-		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.4"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$(".fancybox").fancybox({
-					padding : 0,
-					nextEffect: 'none',
-					prevEffect: 'none'
-				});
-			});
-		</script>
-	<!--<![endif]-->
-</head>
-<body id="work">
-	<div class="site-container">
-		<div id="header"></div>
-		<div id="wrap">
-			<h1 class="unselectable">
-				<a class="header-footer-links" href="index.html">
-				Roberto Gomez Jr</a>
-			</h1>
-			<nav class="unselectable">
-				<ul class="tabs">
-					<li class="home unselected">
-						<a href="index.html"><h4>Home</h4></a>
-					</li>
-					<li class="work selected">
-						<!-- IE 9 fix: Necessary for preventing the psuedo  -->
-						<!-- elements of the selected tab from becoming 	-->
-						<!-- active links in adjacent tabs.					-->
-						<!--[if !IE]><!-->
-							<a href="work.html"><h4>Work</h4></a>
-						<!--<![endif]-->
-						<!--[if IE]>
-							<a><h4>Work</h4></a>
-						<![endif]-->
-					</li>
-					<!--<li class="projects unselected">
-						<a href="projects.html"><h4>Projects</h4></a>
-					</li>-->
-					<li class="about unselected">
-						<a href="about.html"><h4>About</h4></a>
-					</li>
-				</ul>
-			</nav>
-			<div class="work-container">
-				<h2>Semi-Autonomous Robotics Research</h2>
-				<hr>
-				<!-- id tags must be on the img's, not the a's for		-->
-				<!-- margins to work. There must not be any whitespace	-->
-				<!-- between the end of the img tags and ending a tags	-->
-				<!-- or else ghost/extraneous links will appear.		-->
-				<div id="robot-images">
-					<a  class="fancybox" rel="robot" href="img/robot-1024x768.jpg" 
-						data-fancybox-title="The robot in its final design 
-						with both sensors and mounts in place.">
-						<img id="robot-main-image" class="work-images" 
-						src="img/robot-400x300.jpg" width="400" 
-						height="300" alt="Semi-Autonomous Robot"></a>
-					<a  class="fancybox" rel="robot" 
-						href="img/gomez-barriga-poster-1024x768.jpg" 
-						data-fancybox-title="Research poster for the robot 
-						pictured during testing phase with only one sensor.">
-						<img id="robot-poster" class="work-images"
-						src="img/gomez-barriga-poster-185x139.jpg" 
-						width="185" height="139" alt="Semi-Autonomous Robots 
-						and Efficiency Through Internet Access"></a>
-					<a  class="fancybox" rel="robot" 
-						href="img/robot-mount-800x600.jpg" data-fancybox-title=
-						"A SolidWorks model for the main Plexiglas mount.">
-						<img id="robot-mount" class="work-images" 
-						src="img/robot-mount-185x139.jpg" width="185" height="139" 
-						alt="SolidWorks model for Plexiglass mount"></a>
-				</div>
-				<p class="overview">
-					<span class="italic">Position:</span> Research Assistant
-				</p>
-				<p>
-					<span class="italic">College:</span> Dept. of
-					Electrical and Computer
-				</p>
-				<p id="robot-org-wrap" class="overview">
-					Engineering, SDSU
-				</p>
-				<p class="overview">
-					<span class="italic">Date:</span> June 2012 - August 2012
-				</p>
-				<p class="overview"><span class="italic">Fields:</span> 
-					Robotics, C/C++ programming, Electronics
-				</p>
-				<p class="description">
-					I have always believed that it's important 
-					to acquire practical, real-life experience outside of 
-					the classroom. To that end I was selected to 
-					participate in the 
-					<a href="//alliance.sdccmesa.com/archives/2692"> 2012 
-					NSF/MESA Summer Team Internship Program</a>. As a research 
-					assistant for the SDSU Department of Electrical and 
-					Computer Engineering, I developed a semi-autonomous, 
-					mobile robot with object avoidance capabilities. Based on 
-					the popular 
-					<a href="//irobot.com/us/robots/Educators/Create.aspx">
-					iRobot Create®</a> platform, it used two ultrasonic 
-					sensors for object detection. For interfacing between the 
-					platform and sensors, I programmed an 
-					<a href="//arduino.cc/en/Main/arduinoBoardMega">
-					Arduino Mega</a> microcontroller. It was responsible for 
-					interpreting the sensor data, determining if obstructions 
-					were in the robot's path, and issuing movement commands.
-				</p>
-				<p class="description">
-					While it was a simple project as far as robotics go, it 
-					involved many disciplines, such as 
-					electrical, computer, and mechanical engineering. First, 
-					I determined how to connect all the components so that 
-					they would all function as a single system. For example, 
-					I created a simple circuit on a breadboard that delivered 
-					power from the iRobot® to the sensors and microcontroller. 
-					Then I programmed the Arduino (which essentially uses 
-					C/C++ language) to analyze the pulse width output signals 
-					from the two sensors. If an object was detected within 
-					ten inches, the microcontroller would send a sequence of 
-					bytes to the platform through serial communication to 
-					initiate a simple avoidance maneuver that consisted of 
-					stopping, rotating a number of degrees, and continuing
-					forward. Lastly, I designed a few parts in 
-					<a href="//solidworks.com/sw/products/3d-cad/solidworks-3d-cad.htm">
-					SolidWorks</a> to provide mounting surfaces for the 
-					components. The parts were formed from Plexiglas using a 
-					CNC machine in the SDSU engineering machine shop.
-				</p>
-				<p class="description">
-					Looking back, this research has given me a great 
-					sense of accomplishment. It has definitely increased 
-					my knowledge and appreciation for robotics and embedded 
-					systems. For more information view the research poster 
-					my partner and I created (he worked on a website for the 
-					Retired Senior Volunteer Patrol). If you would like to 
-					know some of the technical details of the robot I can
-					send you my report for the project.
-				</p>
-			</div>
-			<div class="work-container">
-				<h2>Quality Assurance Internship</h2>
-				<hr>
-				<a  class="fancybox" href="img/gomez-yalda-poster-960x720.jpg" 
-					data-fancybox-title="Research poster for my internship 
-					at GA-ESI."><img id="qa-poster" class="work-images"
-					src="img/gomez-yalda-poster-400x300.jpg" 
-					width="400" height="300" alt="Internship Poster"></a>
-				<p class="overview">
-					<span class="italic">Position:</span> Quality Assurance 
-					Intern I & II
-				</p>
-				<p class="overview">
-					<span class="italic">Company:</span> General Atomics 
-					Electronic Systems, Inc.
-				</p>
-				<p>
-					<span class="italic">Date:</span> May 2008 - August 2008
-				</p>
-				<p id="qa-date-wrap" class="overview">
-					July 2009 - August 2009
-				</p>
-				<p class="overview">
-					<span class="italic">Field:</span> Quality Assurance
-				</p>
-				<p class="description">
-					As it so happens I was also involved in MESA's first
-					<a href="//alliance.sdccmesa.com/archives/262"> 
-					Summer Team Internship</a> event in 2008. I am proud to 
-					have been a part of this successful program, now in its 
-					fifth year, on two separate occasions. That year, when I 
-					was studying mechanical engineering at SDSU, I worked 
-					for <a href="//ga-esi.com/">General Atomics 
-					Electronic Systems, Inc.</a> (GA-ESI) as a quality 
-					assurance (QA) intern. The QA work I did was for 
-					sophisticated aircraft launching and arresting systems 
-					called <a href="//ga.com/emals">EMALS</a> and 
-					<a href="//ga.com/advanced-arresting-gear"
-					>AAG</a>. What I primarily did was document the 
-					change control process of parts and materials that did not 
-					meet their specifications. Some of my responsibilities 
-					included gathering non-conformance reports from inspectors,
-					writing supplier's disposition request (SDR) forms to 
-					record deficient items, and maintaining a spreadsheet to 
-					log and track said SDR's. As my first internship 
-					experience, I really enjoyed contributing to such an 
-					important and fast-paced project.
-				</p>
-				<p class="description">
-					In the summer of 2009 I returned to work for GA-ESI again 
-					as a QA intern. I was given much more of a hands-on 
-					position as I assisted inspecting parts and materials 
-					to ensure they met the drawings and specifications required
-					by engineers. In this position I learned first hand the 
-					importance of quality assurance. Although my work in these 
-					internships did not involve software development, I 
-					believe that they have given me the experience of 
-					working in a large, project-based company that is valuable 
-					in any organization.
-				</p>
-				<!-- Footer links nested inside work-container and	-->
-				<!-- using margin-top for cross-browser positioning	-->
-				<h4 id="email" class="unselectable">
-					<a class="header-footer-links" 
-					href="mailto:mail@robertogomezjr.com">
-					mail@robertogomezjr.com</a>
-				</h4>
-				<h4 id="social-media" class="unselectable">
-					<a class="header-footer-links" 
-					href="//linkedin.com/in/robertogomezjr">LinkedIn</a>
-					<span class="footer-text"> | </span>
-					<a class="header-footer-links" 
-					href="//github.com/robertogomez">GitHub</a>
-                    <span class="footer-text"> | </span>
-                    <a class="header-footer-links" 
-                    href="//stackoverflow.com/users/2352473/roberto-gomez">Stack Overflow</a>
-				</h4>
-			</div>
-		</div>
-		<div id="footer"></div>
-	</div>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A brief overview of Roberto's work 
+            experience, including his robotics research and quality assurance internship.">
+        <meta name="author" content="Roberto Gomez, Jr.">
+        <link rel="shortcut icon" href="favicon.ico" sizes="16x16 32x32">
+        <title>Work History of Roberto Gomez Jr</title>
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+        <link href="css/common.css" rel="stylesheet">
+        <link href="css/work.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Fixed navbar -->
+        <header class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"
+                    data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1><a class="navbar-brand" href="#">Roberto Gomez Jr</a></h1>
+                </div>
+                <nav class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="#">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Begin page content -->
+
+        <footer>
+            <ul>
+                <li><a href="mailto:mail@robertogomezjr.com">mail@robertogomezjr.com</a></li> |
+                <li><a href="//linkedin.com/in/robertogomezjr">LinkedIn</a></li> |
+                <li><a href="//github.com/robertogomez">GitHub</a></li> |
+                <li><a href="//stackoverflow.com/users/2352473/roberto-gomez">Stack Overflow</a></li>
+            </ul>
+        </footer>
+
+        <!-- jQuery and Bootstrap JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- jQuery fallback -->
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
+
