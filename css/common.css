@@ -30,6 +30,7 @@ hr {
 /* Move margin from bottom of p elements to the top of adjacent ones */
 p { margin-bottom: 0; }
 p + p { margin-top: 10px; }
+article + article { margin-top: 20px; }
 
 footer {                        /* Sticky footer */
     position: absolute;
