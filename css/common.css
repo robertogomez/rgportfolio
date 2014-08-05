@@ -16,7 +16,7 @@ h1, h2 {
     font-weight: 600;
 }
 
-.navbar-brand { font-size: 1em; }
+.navbar-brand { font-size: 0.75em; }
 
 nav { font-size: 1.4em; }
 
@@ -87,4 +87,6 @@ body > .container a::selection {
     background: #4a525a;
     background: rgba(74,82,90,.9);
 }
+
+@media (min-width: 768px) { .navbar-brand { font-size: 1em; } }
 
