@@ -30,13 +30,13 @@ hr {
 /* Move margin from bottom of p elements to the top of adjacent ones */
 p { margin-bottom: 0; }
 p + p { margin-top: 10px; }
+footer li + li { margin-left: 50px; }
 
 footer {                        /* Sticky footer */
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 60px;
-    font-size: 1.1em;
     line-height: 60px;          /* For vertically aligning the ul */
     text-align: center;
     color: #999999;
