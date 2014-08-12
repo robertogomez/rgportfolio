@@ -1,80 +1,9 @@
-/*-----------------------------------------------------------------
- *	Title:			work.css
- *	Author:			Roberto Gomez
- *	Date:			5/2/13
- *	Description:	CSS external stylesheet for work page work.html
- *-----------------------------------------------------------------*/
+table { margin-bottom: 10px; }
 
-#work nav .work > a, 				/* Disables the tab link  */
-#work nav .selected > a {			/* of the current page	  */
-	pointer-events:none;			/* Unsupported in IE	  */
-    cursor:default;
+th {
+    text-align: left;
+    vertical-align: top;
 }
 
-.work-container {					/* For Chromium: Confines text selection */
-	position:relative;				/* to text only, otherwise the edge of	 */
-	padding:40px 68px;				/* the page is also selected.			 */
-}
+td { padding-left: 5px; }
 
-#robot-images {
-	width:402px;
-}
-
-#robot-images, #qa-poster {
-	float:right;
-	margin-left:35px;
-	margin-bottom:20px;
-}
-
-hr {
-	margin-bottom:20px;
-}
-
-img.work-images {
-	border:1px solid #4A525A;
-}
-
-img.work-images:hover {
-	border:1px solid #1c74a5;
-}
-
-#robot-main-image {
-	margin-bottom:22px;
-}
-
-#robot-poster {
-	float:left;
-}
-
-#robot-mount {
-	float:right;
-}
-
-p {
-	font-size:16px;
-	line-height:115%;
-}
-
-.overview {
-	margin-bottom:1em;
-}
-
-#robot-org-wrap {
-	margin-left:4.3em;
-}
-
-.italic {
-	font-style:italic;
-}
-
-.description {
-	text-indent:2em;
-}
-
-#qa-date-wrap {
-	margin-left:3em;
-}
-
-#email, #social-media {				/* Using margin-top instead of arbitrary */
-	margin-top:59px;				/* top because gives better positioning  */
-}									/* across different browsers			 */
