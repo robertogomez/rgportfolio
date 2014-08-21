@@ -34,7 +34,7 @@ article > ul > li > a > img {
     margin-bottom: 10px;
 }
 
-img:hover { border: 1px solid #1c74a5; }
+a > img:hover { border: 1px solid #1c74a5; }
 
 @media (min-width: 500px) {
     article > ul > li {
@@ -42,7 +42,7 @@ img:hover { border: 1px solid #1c74a5; }
         margin: 0 3%;
     }
 
-    article > ul > li:nth-child(3) { display: inline-block; }
+    article > ul > li:nth-child(2) { display: inline-block; }
 
     #qa-poster {
         width: 40%;
@@ -58,7 +58,7 @@ img:hover { border: 1px solid #1c74a5; }
         margin: 0 1.5%;
     }
 
-    article > ul > li:nth-child(2) { display: inline-block; }
+    article > ul > li:nth-child(3) { display: inline-block; }
 }
 
 @media (min-width: 1200px) {

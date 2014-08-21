@@ -13,6 +13,8 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/magnific-popup-custom.css" rel="stylesheet">
         <link href="css/common.css" rel="stylesheet">
         <link href="css/work.css" rel="stylesheet">
         <!--[if lt IE 9]>
@@ -69,25 +71,28 @@
                                 <td>Robotics, Electronics, C Programming</td>
                             </tr>
                         </table>
-                        <ul>
+                        <ul id="robot-images">
                             <li>
-                                <a href="img/robot-1024x768.jpg">
+                            <a href="img/robot-1024x768.jpg"
+                            title="The robot in its final design with both sensors and all mounts installed">
                                     <img src="img/robot-250x188.jpg"
                                     width="250" height="188" alt="Semi-Autonomous Robot">
                                 </a>
                             </li>
                             <li>
-                                <a href="img/robot-mount-800x600.jpg">
-                                    <img src="img/robot-mount-250x188.jpg"
-                                    width="250" height="188" alt="SolidWorks
-                                    model for Plexiglass mount">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="img/gomez-barriga-poster-1024x768.jpg">
+                            <a href="img/gomez-barriga-poster-1024x768.jpg"
+                            title="Research poster for the robot pictured during testing phase with only one sensor">
                                     <img src="img/gomez-barriga-poster-250x188.jpg"
                                     width="250" height="188" alt="Semi-Autonomous
                                     Robots and Efficiency Through Internet Access">
+                                </a>
+                            </li>
+                            <li>
+                            <a href="img/robot-mount-800x600.jpg"
+                            title="A SolidWorks model for the main Plexiglas mount">
+                                    <img src="img/robot-mount-250x188.jpg"
+                                    width="250" height="188" alt="SolidWorks
+                                    model for Plexiglass mount">
                                 </a>
                             </li>
                         </ul>
@@ -164,7 +169,8 @@
                                 <td>Quality Assurance, Mechanical Engineering</td>
                             </tr>
                         </table>
-                        <a href="img/gomez-yalda-poster-960x720.jpg">
+                        <a class="popup-link" href="img/gomez-yalda-poster-960x720.jpg"
+                        title="Research poster for my internship at GA-ESI">
                             <img id="qa-poster" class="center-block"
                             src="img/gomez-yalda-poster-400x300.jpg"
                             width="400" height="300"
@@ -224,6 +230,34 @@
         <!-- jQuery fallback -->
         <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#robot-images').magnificPopup({
+                    type: 'image',
+                    delegate: 'a',
+                    gallery: { enabled:true },
+                    disableOn: 500,
+                    image: { cursor: 'null' },
+                    zoom: {
+                        enabled: true,
+                        duration: 300,
+                        easing: 'ease-in-out',
+                    }
+                });
+
+                $('.popup-link').magnificPopup({
+                    type: 'image',
+                    disableOn: 500,
+                    image: { cursor: 'null' },
+                    zoom: {
+                        enabled: true,
+                        duration: 300,
+                        easing: 'ease-in-out',
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
 
