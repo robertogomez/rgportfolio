@@ -1,40 +1,23 @@
-README
-
 NAME
-	rgportfolio - the portfolio website of Roberto Gomez, Jr.
+    rgportfolio - the portfolio website of Roberto Gomez, Jr.
 
 DESCRIPTION
-	This project is an online portfolio, hosted at www.robertogomezjr.com, that 
-	serves to demonstrate some of my work and interests. It aims to present 
-	these in a minimal, accessible fashion. The importance of presentation 
-	and features is placed above the need for compatibility. However, efforts 
-	will be made to provide for access from older browsers. In its current 
-	state, the portfolio is a simple fixed width layout with three web pages. 
-	Further goals include creating a projects page and adding a fluid layout.
+    This project is an online portfolio, hosted at www.robertogomezjr.com, that
+    serves to demonstrate some of my work and interests. It aims to present
+    these in a minimal, accessible fashion. The site is built upon Bootstrap
+    in order to provide responsive functionality for multiple devices.
 
-ACKNOWLEDGEMENTS
-	The following are some great resources which I would like
-	to thank that were very helpful in making this site.
+ATTRIBUTIONS
+    Bootstrap
+    www.getbootstrap.com
 
-	Extended footer from Joe Strong
-	http://www.joestrong.co.uk/blog/css-tip-extend-your-sites
-	-footer-to-the-bottom-of-the-page/
-
-	Reset stylesheet from Eric Meyer
-	http://meyerweb.com/eric/tools/css/reset/
-
-	Tab menu and other things from Chris Coyier
-	http://css-tricks.com/tabs-with-round-out-borders/
-	http://css-tricks.com/pointer-events-current-nav/
-	http://css-tricks.com/left-align-and-right-align-text-on-the-same-line/
-
-	Magnific Popup by Dmitry Semenov
-	http://dimsemenov.com/plugins/magnific-popup/
-
+    Open Sans font by Steve Matteson
+    
     Font Awesome by Dave Gandy - http://fontawesome.io
 
-VERSION
-	1.1.1
+    Magnific Popup by Dmitry Semenov
+    http://dimsemenov.com/plugins/magnific-popup/
 
 AUTHOR
-	Roberto Gomez, Jr.
+    Roberto Gomez, Jr.
+
