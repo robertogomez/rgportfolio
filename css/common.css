@@ -61,7 +61,7 @@ footer > ul > li > a:focus {
     text-decoration: none;
 }
 
-article img { border: 1px solid #4a525a; }
+article img, #prof-pic-lg { border: 1px solid #4a525a; }
 
 a { color: #145376; }
 
