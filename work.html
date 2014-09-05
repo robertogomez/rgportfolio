@@ -71,31 +71,12 @@
                                 <td>Robotics, Electronics, C Programming</td>
                             </tr>
                         </table>
-                        <ul id="robot-images">
-                            <li>
-                            <a href="img/robot-1024x768.jpg"
-                            title="The robot in its final design with both sensors and all mounts installed">
-                                    <img src="img/robot-250x188.jpg"
-                                    width="250" height="188" alt="Semi-Autonomous Robot">
-                                </a>
-                            </li>
-                            <li>
-                            <a href="img/gomez-barriga-poster-1024x768.jpg"
-                            title="Research poster for the robot pictured during testing phase with only one sensor">
-                                    <img src="img/gomez-barriga-poster-250x188.jpg"
-                                    width="250" height="188" alt="Semi-Autonomous
-                                    Robots and Efficiency Through Internet Access">
-                                </a>
-                            </li>
-                            <li>
-                            <a href="img/robot-mount-800x600.jpg"
-                            title="A SolidWorks model for the main Plexiglas mount">
-                                    <img src="img/robot-mount-250x188.jpg"
-                                    width="250" height="188" alt="SolidWorks
-                                    model for Plexiglass mount">
-                                </a>
-                            </li>
-                        </ul>
+                        <a class="popup-link" href="img/robot-1024x768.jpg"
+                        title="The robot in its final design with both sensors and all mounts installed">
+                            <img class="center-block img-responsive"
+                            src="img/robot-512x384.jpg" width="512" height="384"
+                            alt="Semi-Autonomous Robot">
+                        </a>
                         <p>
                             I have always believed that it's important
                             to acquire practical, real-life experience outside of
@@ -116,6 +97,13 @@
                             interpreting the sensor data, determining if obstructions
                             were in the robot's path, and issuing movement commands.
                         </p>
+                        <a class="popup-link" href="img/gomez-barriga-poster-1024x768.jpg"
+                        title="Research poster for the robot pictured during testing phase with only one sensor">
+                            <img class="center-block img-responsive"
+                            src="img/gomez-barriga-poster-512x384.jpg"
+                            width="512" height="384" alt="Semi-Autonomous
+                            Robots and Efficiency Through Internet Access">
+                        </a>
                         <p>
                             While it was a simple project as far as robotics go, it
                             involved many disciplines, such as
@@ -137,6 +125,13 @@
                             components. The parts were formed from Plexiglas using a
                             CNC machine in the SDSU engineering machine shop.
                         </p>
+                        <a class="popup-link" href="img/robot-mount-800x600.jpg"
+                        title="A SolidWorks model for the main Plexiglas mount">
+                            <img class="center-block img-responsive"
+                            src="img/robot-mount-500x375.jpg"
+                            width="500" height="375" alt="SolidWorks
+                            model for Plexiglass mount">
+                        </a>
                         <p>
                             Looking back, this research has given me a great
                             sense of accomplishment. It has definitely increased
@@ -171,9 +166,9 @@
                         </table>
                         <a class="popup-link" href="img/gomez-yalda-poster-960x720.jpg"
                         title="Research poster for my internship at GA-ESI">
-                            <img id="qa-poster" class="center-block"
-                            src="img/gomez-yalda-poster-400x300.jpg"
-                            width="400" height="300"
+                            <img id="qa-poster" class="center-block img-responsive"
+                            src="img/gomez-yalda-poster-512x384.jpg"
+                            width="512" height="384"
                             alt="Quality Assurance Internship Poster">
                         </a>
                         <p>
@@ -233,22 +228,10 @@
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script>
             $(document).ready(function() {
-                $('#robot-images').magnificPopup({
-                    type: 'image',
-                    delegate: 'a',
-                    gallery: { enabled:true },
-                    disableOn: 500,
-                    image: { cursor: 'null' },
-                    zoom: {
-                        enabled: true,
-                        duration: 300,
-                        easing: 'ease-in-out',
-                    }
-                });
-
                 $('.popup-link').magnificPopup({
                     type: 'image',
-                    disableOn: 500,
+                    disableOn: 900,
+                    gallery: { enabled:true },
                     image: { cursor: 'null' },
                     zoom: {
                         enabled: true,
