@@ -1,8 +1,10 @@
 #intro-section {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
     margin-bottom: 20px;
 }
+
+#intro-section > p { line-height: 1.5; }
 
 #news-section h2 { font-size: 1.25em; }
 
@@ -10,8 +12,6 @@
     font-size: 1.75em;
     text-align: center;
 }
-
-#news-section p, #featured-section p { font-size: 1.1em; }
 
 #featured-section div {         /* Vertically align the featured text */
     display: table-cell;
