@@ -1,0 +1,9 @@
+@media (min-width: 500px) {
+    article > img {
+        float: left;
+        width: 200px;
+        height: 200px;
+        margin: 6px 15px 8px 0;
+    }
+}
+
