@@ -4,7 +4,7 @@ html {                          /* Required for sticky footer */
 }
 
 body {
-    margin-bottom: 60px;        /* Set to height of sticky footer */
+    margin-bottom: 50px;        /* Set to height of sticky footer */
     background: #b6c7cf;
     font-family: "Open Sans", Arial, sans-serif;
 }
@@ -46,8 +46,8 @@ footer {                        /* Sticky footer */
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
-    line-height: 60px;          /* For vertically aligning the ul */
+    height: 50px;
+    line-height: 50px;          /* For vertically aligning the ul */
     text-align: center;
     color: #999999;
     background-color: #222222;
