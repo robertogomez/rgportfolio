@@ -7,5 +7,9 @@ th {
 
 td { padding-left: 5px; }
 
+.img-block { text-align: center; }              /* Horizontally center images */
+
+a > img { max-width: 100%; height: auto; }      /* Responsive images */
+
 a > img:hover { border: 1px solid #1c74a5; }
 
