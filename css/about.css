@@ -1,3 +1,5 @@
+article > img { margin: 25px auto; }
+
 @media (min-width: 500px) {
     article > img {
         float: left;

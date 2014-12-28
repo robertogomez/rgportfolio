@@ -34,8 +34,6 @@ p, table {
     line-height: 1.7;
 }
 
-article img { margin: 25px auto; }
-
 /* Move margin from bottom of p elements to the top of adjacent ones */
 p { margin-bottom: 0; }
 p + p { margin-top: 15px; }
