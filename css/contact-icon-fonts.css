@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'contact-icon-fonts';
+  src: url('../font/contact-icon-fonts.eot?25216561');
+  src: url('../font/contact-icon-fonts.eot?25216561#iefix') format('embedded-opentype'),
+       url('../font/contact-icon-fonts.woff?25216561') format('woff'),
+       url('../font/contact-icon-fonts.ttf?25216561') format('truetype'),
+       url('../font/contact-icon-fonts.svg?25216561#contact-icon-fonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'contact-icon-fonts';
+    src: url('../font/contact-icon-fonts.svg?25216561#contact-icon-fonts') format('svg');
+  }
+}
+
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "contact-icon-fonts";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+
+  /* From Font-Awesome */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.33333333em;              /* fa-lg */
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+ 
+.icon-env:before { content: '\e800'; } /* '' */
+.icon-pro:before { content: '\e801'; } /* '' */
+.icon-repo:before { content: '\e802'; } /* '' */
+.icon-qanda:before { content: '\e803'; } /* '' */
+
