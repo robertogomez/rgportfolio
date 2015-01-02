@@ -1,2 +1,5 @@
 img { width: auto; }        /*  Fix stretched responsive images */
 
+/* Reduce font size to avoid text wrapping */
+#news-section h2 { font-size: 1.15em; }
+
